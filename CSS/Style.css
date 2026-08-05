@@ -56,58 +56,10 @@ section.Home header div.painel .nav-bar ul li {
 section.Home header div.painel .nav-bar ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bold; /*para negrito */
   font-size: 19px;
   margin-left: 20px;
 }
 
 /* ############################   segunda section  ################## */
 
-section#Perfil {
-    border: 2px solid red;
-
-    height: 500px;
-}
-
-section#Perfil .Apresentacao >p{
-  color: white;
-  border: 2px solid red;
-  width: 600px;
-  height: 200px;
-}
-section#Perfil .Apresentacao .Developer {
-  width: 400px;
-  font-size: 70px;
-  border: 2px solid red;
-  background: linear-gradient(45deg, #5ebd5e, white);
-  -webkit-text-fill-color: transparent; /*Essa propriedade deixa o texto transparente, fazendo com que o fundo apareça.*/
-  background-clip: text; /*
-  Com essa propriedade instruímos ao navegador para mostrar o fundo (Que é gradiente) somente onde existe texto ou letra. e deixa o resto invisível.
-  No fundo essa propriedade faz com que o background desapareça e mostra somente onde tem letra e como --declarou-se uma proprieade que deixa o texto transparnte, o background vai aparecer somente no formato das letras(Pois por estarem transpaente vão mostrar a cor que têm por traz).   */
-  margin-top: 100px;
-  margin-left: 50px;
-}
-
-section#Perfil #InicioPerfil .Apresentacao .Developer p:last-child{
-margin-top: 30px;
-}
-
-section#Perfil #InicioPerfil {
-  display: flex;
-  justify-content: space-between;
-  /* position: relative; */
-}
-
-section#Perfil #InicioPerfil .Foto_De_Perfil img{
-  width: 370px;
-  height: 310px;
-  /* position: absolute; */
-  border: 2px solid ;
-  border-color: linear-gradient(#5ebd5e, #5ebd5e);
-  /* right: 100px;
-  top: 100px; */
-  border-radius: 200px;
-
-  margin-right: 100px;
-  margin-top: 80px;
-}
