@@ -1,26 +1,31 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 10px;
   box-sizing: border-box;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+  background-color: rgb(75, 72, 72);
+  height: 900px;
 }
 section.Home {
-  border: 4px solid red;
-  background: black;
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: 100%;
+  border: 2px solid rgb(212, 195, 195);
+  width: 100%; /*Assim vai adaptar-se a qualquer tamanho que a tela tiver.*/
+  }
 
+.Home{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/R.png);
+    background-size: cover; /*Pesquisar mais sobre*/
+    background-position: center;
 }
 
 header {
-  /* border: 6px solid blue; */
-  height: 80px;
+  border: 6px solid blue;
+  height: 60px;
+  position: fixed;
+  width: inherit; /*Pega o mesmo valor que a tag pai tem para esta propriedade*/
 }
 /* div{
     border: 8px solid green;
@@ -31,7 +36,7 @@ section.Home header div.painel {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  position: relative;
+  position: relative; /*Assim os filhos vão mover-se de acordo os limites dessa tag pai*/
 }
 section.Home header div.painel h1 {
   border: 2px solid rgb(202, 38, 38);
@@ -61,5 +66,25 @@ section.Home header div.painel .nav-bar ul li a {
   margin-left: 20px;
 }
 
-/* ############################   segunda section  ################## */
+/* ############################   segunda section class apresentacao  ################## */
 
+section.apresentacao{
+  border: 5px solid red;
+  margin: 300px auto; /*Permite centralizar o elemento e contribui para a responsividade.*/
+  color: aliceblue;
+  font-size: 20px;
+}
+div.Apre1{
+    position: relative;/*Para que o filho possa ter ele como referência.*/
+    border: 1px solid greenyellow;
+}
+
+section.apresentacao div.Apre1 h6{
+  text-align: center;
+  border: 5px solid yellow;
+}
+section.apresentacao div.Apre1 h1{
+  border: 4px solid rgb(55, 21, 142);
+  text-align: center;
+  position: relative;/*É somente com esse valor que os elementos abedecem as coordenadas*/
+}
