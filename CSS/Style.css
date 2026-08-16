@@ -122,10 +122,14 @@ section.apresentacao div.Apre1 h5{
 section.Princ{
   border: 5px solid green;
   width: 100%;
+ 
 }
 section.Princ .grid-container{
- /* display: flex; */
- 
+ justify-content: space-between;
+ display: flex;
+ width: 90%;
+ border: 1px solid red;
+ margin: 10px auto;
 }
 
 section.Princ div.grid-container article{
@@ -133,8 +137,7 @@ section.Princ div.grid-container article{
   width: 30%;
   height: 200px;
   margin: 10px;
-  flex-basis: 30%;
-  display: inline-block;
+
 }
 section.Princ div.grid-container article img{
   width: 100%;
