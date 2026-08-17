@@ -122,24 +122,39 @@ section.apresentacao div.Apre1 h5{
 section.Princ{
   border: 5px solid green;
   width: 100%;
- 
+  height: 500px;
 }
+section.Princ h2{
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid red;
+  padding: 0;
+}
+
 section.Princ .grid-container{
  justify-content: space-between;
  display: flex;
- width: 90%;
- border: 1px solid red;
- margin: 10px auto;
+ width: 95%;
+ height: 350px;
+ border: 2px solid red;
+ margin: 30px auto;
 }
 
 section.Princ div.grid-container article{
   border: 2px solid blue;
   width: 30%;
-  height: 200px;
+  height: 300px;
   margin: 10px;
 
 }
 section.Princ div.grid-container article img{
   width: 100%;
   height: 70%;
+}
+
+footer{
+  height: 200px;
+  border: 2px solid red;
+  background-image: url(../IMG/R.png);
+  color: white;
 }
