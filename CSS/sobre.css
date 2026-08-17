@@ -1,0 +1,23 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+div.perfil{
+    border: 5px solid red;
+    height: 500px;
+
+}
+
+section.imagem{
+    float: right;
+    border: 5px solid green;
+    width: 50%;
+    height: 100%;
+  
+}
+section.texto{
+    border: 5px solid rgb(128, 0, 83);
+    width: 50%;
+    height: 100%
+}
