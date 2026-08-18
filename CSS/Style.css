@@ -653,3 +653,72 @@ footer {
     }
 
 }
+
+/* ======== FOOTER ======== */
+footer{
+  background: #1E1E1E;
+  flex-direction: column;
+
+}
+footer div.direcoes{
+  height: 25vh;
+}
+footer h3{
+  color: #00BCD4;
+}
+
+footer div.direcoes .footer-info h2{
+  text-align: left;
+}
+footer div.direcoes .footer-info h3{
+  margin: 8px 0px 8px 0px;
+}
+
+footer div.direcoes{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  clear: right;
+  border-bottom: 2px solid #646464;
+}
+
+h3{ /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
+  text-align: left;
+}
+footer div.direcoes div:first-child {
+  width: 20%;
+}
+ span{
+  color:#00BCD4;
+}
+
+footer div.direcoes div:first-child p{
+  text-align: left;
+}
+
+footer div.link ul{
+  text-align: left;
+}
+footer div.link ul li{
+  margin-top: 5px;
+  list-style: none;
+}
+footer div.link li::before {
+    content: "›";
+    color: #00BCD4;
+    margin-right: 8px;
+}
+
+footer div.link ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 70%;
+}
+
+footer div.copyright{
+  clear: left;
+  width: 100%;
+  margin: 10px auto;
+  padding-top: 10px;
+}
+

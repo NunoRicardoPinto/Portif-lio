@@ -93,94 +93,51 @@
 <html lang="pt">
 
 <head>
-    <!-- Define a codificação dos caracteres da página -->
     <meta charset="UTF-8">
-
     <!-- Permite que o site se adapte a telemóveis, tablets e computadores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título apresentado na aba do navegador -->
     <title>Portfólio | Nuno Pinto</title>
-
-    <!-- Liga o ficheiro HTML ao ficheiro CSS -->
     <link rel="stylesheet" href="CSS/Style.css">
 </head>
 
 
 <body>
 
-    <!-- =====================================================
-         HEADER / BARRA DE NAVEGAÇÃO
-         Contém o nome e o menu principal do portfólio.
-         ===================================================== -->
+    <!-- ====== HEADER / BARRA DE NAVEGAÇÃO -->
 
     <header class="barra-nav">
-
-        <!-- Painel que organiza o nome e o menu -->
         <div class="painel">
-
-            <!-- Nome do proprietário do portfólio -->
             <h1>
                 <a href="index.html">Nuno Pinto</a>
             </h1>
-
-
             <!-- Menu principal de navegação -->
             <nav class="nav-bar">
-
                 <ul>
-
-                    <!-- Link para a página inicial -->
                     <li>
                         <a href="#casa">Casa</a>
                     </li>
-
-                    <!-- Link para a secção de projetos -->
                     <li>
                         <a href="#projetos">Projetos</a>
                     </li>
-
-                    <!-- Link para a página Sobre -->
                     <li>
                         <a href="./sobre.html">Sobre</a>
                     </li>
-
-                    <!-- Link para a página Contacto -->
                     <li>
                         <a href="./contacto.html">Contacto</a>
                     </li>
-
                 </ul>
-
             </nav>
-
         </div>
-
     </header>
 
-
-    <!-- =====================================================
-         SECÇÃO HOME
-         É a primeira área apresentada ao visitante.
-         ===================================================== -->
-
+    <!-- =======SECÇÃO HOME primeira área apresentada ao visitante.=========== -->
     <section class="Home" id="casa">
-
         <!-- Área de apresentação pessoal -->
         <section class="apresentacao dizeres">
-
-            <!-- Contentor dos textos de apresentação -->
             <div class="Apre1">
-
-                <!-- Mensagem de boas-vindas -->
                 <h6>Seja bem-vindo!</h6>
-
-                <!-- Nome principal -->
                 <h1>Eu sou o Nuno Pinto</h1>
-
-                <!-- Área profissional -->
                 <h2>Front-End Developer</h2>
-
                 <!-- Pequena apresentação profissional -->
                 <p>
                     Atualmente trabalho com desenvolvimento web,
@@ -188,149 +145,118 @@
                     conhecimentos nas seguintes tecnologias:
                     HTML5, CSS3 e JavaScript.
                 </p>
-
             </div>
-
         </section>
-
     </section>
 
-
-    <!-- =====================================================
-         SECÇÃO DE PROJETOS
-         Apresenta os projetos desenvolvidos.
-         ===================================================== -->
+    <!-- =========SECÇÃO DE PROJETO================ -->
 
     <section class="Princ" id="projetos">
-
-        <!-- Título da secção -->
         <h2>Projetos</h2>
-
-
         <!-- Contentor que organiza os cartões dos projetos -->
         <div class="grid-container">
-
-
-            <!-- =================================================
-                 PRIMEIRO PROJETO
-                 ================================================= -->
-
+            <!-- ========= PRIMEIRO PROJETO =========== -->
             <article class="item">
-
-                <!-- Informações do projeto -->
                 <div class="info">
-
-                    <!-- Nome do projeto -->
                     <h3 class="tema">Portfólio</h3>
-
                     <!-- Descrição do projeto -->
                     <p>
                         Website pessoal desenvolvido para
                         apresentar os meus conhecimentos,
                         projetos e evolução na programação web.
                     </p>
-
                 </div>
-
-
                 <!-- Imagem representativa do projeto -->
-                <img
-                    src="IMG/R.png"
-                    alt="Imagem representativa do projeto Portfólio"
-                >
-
-
-                <!-- Estado atual do projeto -->
+                <img src="IMG/R.png" alt="Imagem representativa do projeto Portfólio">
                 <div>
-
                     <h4>Brevemente</h4>
-
                 </div>
-
             </article>
 
 
-            <!-- =================================================
-                 SEGUNDO PROJETO
-                 ================================================= -->
+            <!-- ========= SEGUNDO PROJETO ========== -->
 
             <article class="item">
-
                 <div class="info">
-
                     <h3 class="tema">Projeto Web</h3>
-
                     <p>
                         Projeto desenvolvido para praticar
                         conceitos de HTML5 e CSS3.
                     </p>
-
                 </div>
 
 
-                <img
-                    src="IMG/R.png"
-                    alt="Imagem representativa do segundo projeto"
-                >
-
-
+                <img src="IMG/R.png" alt="Imagem representativa do segundo projeto">
                 <div>
-
                     <h4>Brevemente</h4>
-
                 </div>
-
             </article>
 
-
-            <!-- =================================================
-                 TERCEIRO PROJETO
-                 ================================================= -->
-
+            <!-- ======= TERCEIRO PROJETO ============= -->
             <article class="item">
-
                 <div class="info">
-
                     <h3 class="tema">Aplicação Web</h3>
-
                     <p>
                         Projeto destinado à aplicação prática
                         dos conhecimentos adquiridos em programação.
                     </p>
-
                 </div>
-
-
-                <img
-                    src="IMG/R.png"
-                    alt="Imagem representativa do terceiro projeto"
-                >
-
-
+                <img src="IMG/R.png" alt="Imagem representativa do terceiro projeto">
                 <div>
-
                     <h4>Brevemente</h4>
-
                 </div>
-
             </article>
-
-
         </div>
-
     </section>
 
-
-    <!-- =====================================================
-         FOOTER / RODAPÉ
-         Área final da página.
-         ===================================================== -->
-
+    <!-- =============== FOOTER / RODAPÉ ================== -->
     <footer>
+        <div class="direcoes">
+            <!-- Identidade -->
+            <div class="footer-info">
+                <h2>Nuno <span>Pinto</span></h2>
+                <h3>Front-End Developer</h3>
+                <p>
+                    Desenvolvedor web dedicado  e motivado
+                    a desenvolver soluções e experiências digitais 
+                    que capazes de ajudar os angolanos e o mundo. 
+                    Sempre aprendendo e evoluindo.
+                </p>
+            </div>
+            <!-- Links -->
+            <div class="footer-links link">
+                <h3>Links rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Redes sociais -->
+            <div class="footer-social link">
+                <h3>Redes sociais</h3>
 
-        <!-- Título do rodapé -->
-        <h1>Rodapé do site</h1>
+                <ul>
+                    <li><a href="https://github.com/NunoRicardoPinto" target="_blank">GitHub</a></li>
+                    <li><a href="http://linkedin.com/in/nuno-pinto-9a8467287" target="_blank">LinkedIn</a></li>
+                    <!-- <li><a href="#" target="_blank">Instagram</a></li> Não tenho no momento -->
+                </ul>
+            </div>
 
+            <div class="contacto link">
+                <h3>Redes sociais</h3>
+
+                <ul>
+                    <li><a href="#" target="_blank">nunoricardopinto62@gmail.com</a></li>
+                    <li><a href="#" target="_blank">Luanda Angola</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Nuno <span>Pinto</span>. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 
