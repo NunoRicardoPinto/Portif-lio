@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- Define a codificação dos caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que a página seja responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título apresentado na aba do navegador -->
+    <title>Contacto | Nuno Pinto</title>
+
+    <!-- Liga o HTML ao ficheiro CSS -->
+    <link rel="stylesheet" href="CSS/contacto.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+         Mantém a mesma navegação das outras páginas.
+         ===================================================== -->
+
+    <header class="barra-nav">
+
+        <!-- Painel principal da navegação -->
+        <div class="painel">
+
+            <!-- Nome do proprietário do portfólio -->
+            <h1>
+                <a href="index.html">Nuno Pinto</a>
+            </h1>
+
+
+            <!-- Menu de navegação -->
+            <nav class="nav-bar">
+
+                <ul>
+
+                    <!-- Página inicial -->
+                    <li>
+                        <a href="index.html">Casa</a>
+                    </li>
+
+                    <!-- Secção de projetos -->
+                    <li>
+                        <a href="index.html#projetos">Projetos</a>
+                    </li>
+
+                    <!-- Página sobre -->
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+
+                    <!-- Página atual -->
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+         ===================================================== -->
+
+    <main>
+
+        <!-- Título da página -->
+        <h2>Entre em contacto</h2>
+
+
+        <!-- =================================================
+             ÁREA DE CONTACTO
+             Contém o formulário e as redes sociais.
+             ================================================= -->
+
+        <section class="contacto-container">
+
+
+            <!-- =================================================
+                 FORMULÁRIO
+                 ================================================= -->
+
+            <section class="formulario">
+
+                <!-- Título do formulário -->
+                <h3>Envie uma mensagem</h3>
+
+
+                <!-- Formulário de contacto -->
+                <form>
+
+                    <!-- Campo para o nome -->
+                    <div class="campo">
+
+                        <label for="nome">Nome</label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite o seu nome"
+                        >
+
+                    </div>
+
+
+                    <!-- Campo para o email -->
+                    <div class="campo">
+
+                        <label for="email">Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite o seu email"
+                        >
+
+                    </div>
+
+
+                    <!-- Campo para a mensagem -->
+                    <div class="campo">
+
+                        <label for="mensagem">Mensagem</label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="6"
+                            placeholder="Escreva a sua mensagem..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Botão para enviar o formulário -->
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- =================================================
+                 REDES SOCIAIS
+                 ================================================= -->
+
+            <section class="redes">
+
+                <!-- Título da área -->
+                <h3>Minhas redes</h3>
+
+                <!-- Pequena explicação -->
+                <p>
+                    Também podes encontrar-me através das
+                    minhas redes sociais e profissionais.
+                </p>
+
+
+                <!-- Lista de redes sociais -->
+                <ul>
+
+                    <!-- GitHub -->
+                    <li>
+                        <a href="#" target="_blank">
+                            GitHub
+                        </a>
+                    </li>
+
+                    <!-- LinkedIn -->
+                    <li>
+                        <a href="#" target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+
+                    <!-- Instagram -->
+                    <li>
+                        <a href="#" target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 Nuno Pinto. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
