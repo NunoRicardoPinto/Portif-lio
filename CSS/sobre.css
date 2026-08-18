@@ -1,7 +1,301 @@
-*{
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+/* Remove as margens e espaçamentos padrão do navegador
+   e faz o tamanho dos elementos incluir padding e border. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Define a fonte principal utilizada em toda a página. */
+body {
+    font-family: 'Times New Roman', Times, serif;
+
+    /* Define uma cor de fundo clara para a página. */
+    background-color: #f4f4f4;
+
+    /* Define a cor padrão dos textos. */
+    color: #222;
+
+    /* Define a altura mínima da página. */
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+/* Estiliza a área superior da página. */
+.cabecalho {
+    background-color: #222;
+
+    /* Espaçamento interno do cabeçalho. */
+    padding: 20px 8%;
+
+    /* Coloca o nome e o menu na mesma linha. */
+    display: flex;
+
+    /* Coloca o nome de um lado e o menu do outro. */
+    justify-content: space-between;
+
+    /* Alinha os elementos verticalmente. */
+    align-items: center;
+}
+
+
+/* Estiliza o nome apresentado no cabeçalho. */
+.cabecalho h1 {
+    color: white;
+
+    /* Tamanho do nome. */
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   MENU DE NAVEGAÇÃO
+   ========================================================= */
+
+/* Organiza os links do menu horizontalmente. */
+nav {
+    display: flex;
+
+    /* Espaçamento entre os links. */
+    gap: 25px;
+}
+
+
+/* Estiliza os links do menu. */
+nav a {
+    color: white;
+
+    /* Remove o sublinhado padrão dos links. */
+    text-decoration: none;
+
+    /* Define o tamanho do texto. */
+    font-size: 17px;
+}
+
+
+/* Altera a aparência do link quando o rato passa por cima. */
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+/* Define o espaço principal da página. */
+main {
+    width: 90%;
+
+    /* Impede que o conteúdo fique demasiado largo. */
+    max-width: 1100px;
+
+    /* Centraliza o conteúdo horizontalmente. */
+    margin: 50px auto;
+}
+
+
+/* Título "Sobre o Nuno Pinto". */
+.sobre > h2 {
+    text-align: center;
+
+    /* Espaço abaixo do título. */
+    margin-bottom: 35px;
+
+    font-size: 32px;
+}
+
+
+/* =========================================================
+   ÁREA DO PERFIL
+   ========================================================= */
+
+/* Este é o elemento que já existia no teu código.
+   Em vez de float, usamos Flexbox para organizar
+   imagem e texto lado a lado. */
+div.perfil {
+    display: flex;
+
+    /* Mantém a imagem e o texto lado a lado. */
+    flex-direction: row;
+
+    /* Espaçamento entre as duas áreas. */
+    gap: 40px;
+
+    /* Fundo branco para destacar o conteúdo. */
+    background-color: white;
+
+    /* Espaçamento interno. */
+    padding: 40px;
+
+    /* Arredonda ligeiramente os cantos. */
+    border-radius: 10px;
+
+    /* Cria uma sombra discreta. */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================================
+   ÁREA DA IMAGEM
+   ========================================================= */
+
+/* Define o espaço ocupado pela imagem. */
+section.imagem {
+    width: 40%;
+
+    /* Centraliza a imagem dentro da seção. */
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Define o tamanho e aparência da fotografia. */
+section.imagem img {
+    width: 280px;
+
+    height: 280px;
+
+    /* Faz a imagem ocupar o espaço sem ficar deformada. */
+    object-fit: cover;
+
+    /* Transforma a imagem em aproximadamente circular. */
+    border-radius: 50%;
+
+    /* Cria uma pequena borda ao redor da fotografia. */
+    border: 5px solid #222;
+}
+
+
+/* =========================================================
+   ÁREA DO TEXTO
+   ========================================================= */
+
+/* Define o espaço ocupado pelo texto. */
+section.texto {
+    width: 60%;
+}
+
+
+/* Título "Quem sou eu?". */
+section.texto h3 {
+    font-size: 26px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Estiliza os parágrafos da apresentação. */
+section.texto p {
+    font-size: 18px;
+
+    /* Espaçamento entre linhas para facilitar a leitura. */
+    line-height: 1.7;
+
+    /* Espaçamento entre os parágrafos. */
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+/* Estiliza o rodapé da página. */
+.rodape {
+    background-color: #222;
+
+    color: white;
+
+    /* Espaçamento interno do rodapé. */
+    padding: 20px;
+
+    /* Centraliza o texto. */
+    text-align: center;
+
+    /* Espaço acima do rodapé. */
+    margin-top: 50px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/* Estas regras são aplicadas quando o ecrã possui
+   largura igual ou inferior a 768px, como em tablets
+   e alguns telemóveis. */
+@media (max-width: 768px) {
+
+    /* Coloca o nome e o menu um abaixo do outro. */
+    .cabecalho {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    /* Permite que os links ocupem várias linhas
+       quando não houver espaço suficiente. */
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* Coloca a imagem acima do texto em ecrãs pequenos. */
+    div.perfil {
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 25px;
+    }
+
+
+    /* Faz imagem e texto ocuparem toda a largura disponível. */
+    section.imagem,
+    section.texto {
+        width: 100%;
+    }
+
+
+    /* Reduz o tamanho da fotografia em dispositivos pequenos. */
+    section.imagem img {
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    /* Reduz o tamanho do título principal. */
+    .sobre > h2 {
+        font-size: 27px;
+    }
+
+}
+
+
+
+
+/* *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+ font-family:'Times New Roman', Times, serif;
 }
 div.perfil{
     border: 5px solid red;
@@ -11,6 +305,7 @@ div.perfil{
 
 section.imagem{
     float: right;
+    clear: left;
     border: 5px solid green;
     width: 50%;
     height: 100%;
@@ -19,5 +314,6 @@ section.imagem{
 section.texto{
     border: 5px solid rgb(128, 0, 83);
     width: 50%;
-    height: 100%
-}
+    height: 100%;
+    float: left;
+} */
