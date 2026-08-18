@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,38 +11,39 @@ body {
 }
 
 /* ####################### Estilização do HEADER ################# */
-section.Home {
+/*section.Home {
   border: 2px solid rgb(212, 195, 195);
-  width: 100%; /*Assim vai adaptar-se a qualquer tamanho que a tela tiver.*/
+  width: 100%; /*Assim vai adaptar-se a qualquer tamanho que a tela tiver.
   }
 
 .Home{
-  background-image: 
+    background-image: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/R.png);
-    background-size: cover; /*Pesquisar mais sobre*/
+    background-size: cover; /*Pesquisar mais sobre*
     background-position: center;
+    padding-top: 100px;
 }
 
-header {
-  border: 6px solid blue;
+header.barra-nav {
+  width: 100%;
+  border: 10px solid blue;
   height: 60px;
   position: fixed;
-  width: inherit; /*Pega o mesmo valor que a tag pai tem para esta propriedade*/
-  border-bottom: 2px solid white;
-  border-width: 1px;
+  background-image: url(../IMG/R.png) ;
+ 
 }
 /* div{
     border: 8px solid green;
 } */
 
-section.Home header div.painel {
+/* header div.painel {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  position: relative; /*Assim os filhos vão mover-se de acordo os limites dessa tag pai*/
+  position: relative; /*Assim os filhos vão mover-se de acordo os limites dessa tag pai
 }
-section.Home header div.painel h1 {
+header div.painel h1 {
   border: 2px solid rgb(202, 38, 38);
   position: absolute;
   left: 100px;
@@ -52,30 +53,30 @@ h1 a {
   text-decoration: none;
 }
 
-section.Home header div.painel .nav-bar {
+header div.painel .nav-bar {
   border: 2px solid rgb(255, 0, 187);
   position: absolute;
   right: 0;
-  width: 30%; /*Permite que o space-between tenha menos espaço para distribuir os elementos ficando mais próximos um do outro.*/
+  width: 30%; /*Permite que o space-between tenha menos espaço para distribuir os elementos ficando mais próximos um do outro.
   margin-right: 20px;
   justify-content: space-between;
   align-items: center;
   
 }
-section.Home header div.painel .nav-bar ul{
+header div.painel .nav-bar ul{
    border: 2px solid rgb(16, 233, 179);
    width: 100%;
-   display: flex;/*Há propriedades que podem afetar o efeito de outras, é bom recomeçar.*/
-   justify-content: space-between;/*Preenche todos os espaços vazios.*/
+   display: flex;/*Há propriedades que podem afetar o efeito de outras, é bom recomeçar.
+   justify-content: space-between;Preenche todos os espaços vazios.
 
-}
-section.Home header div.painel .nav-bar ul li {
+} */
+/* header div.painel .nav-bar ul li {
   border: 1px solid white;
   list-style: none;
 
 }
 
-section.Home header div.painel .nav-bar ul li a {
+header div.painel .nav-bar ul li a {
   color: white;
   text-decoration: none;
   font-size: 19px;
@@ -87,55 +88,70 @@ section.Home header div.painel .nav-bar ul li a {
 
 /* ############################   segunda section class apresentacao  ################## */
 
-section.apresentacao{
+/* section.apresentacao{
   border: 5px solid red;
-  margin: 200px auto; /*Permite centralizar o elemento e contribui para a responsividade.*/
+  margin: 200px auto; Permite centralizar o elemento e contribui para a responsividade.
   color: aliceblue;
   font-size: 20px;
 }
 div.Apre1{
-    position: relative;/*Para que o filho possa ter ele como referência.*/
+    position: absolute;Para que o filho possa ter ele como referência. 
     border: 1px solid greenyellow;
+    text-align: center;
 }
 
 section.apresentacao div.Apre1 h6{
   text-align: center;
   border: 5px solid yellow;
-  opacity: 90%;
-  font-weight: bold;
-  width: 100%;
+  /* opacity: 90%; */
+ /* font-weight: bold;
   margin: 1px auto;
 }
 
 section.apresentacao div.Apre1 h1{
   border: 4px solid rebeccapurple;
   text-align: center;
-  position: relative;/*É somente com esse valor que os elementos abedecem as coordenadas*/
+   position: relative; Comentário: É somente com esse valor que os elementos abedecem as coordenadas 
 }
 
-section.apresentacao div.Apre1 h5{
+section.apresentacao div.Apre1 h2{
   text-align: center;
-  opacity: 90%;
+   opacity: 90%;  estava a fazer com que o seu conteúdo passa-se por cima do header por ter a posição fixa...
+} */
+
+/*
+ p{
+  text-indent: 15px;
+  width: 70%;
+  border: 1px solid red;
+  margin: 0px auto;
 }
 
-/* ########################### sessão de projectos ########################## */
+div.dizeres ul{
+  list-style: none;
+}
+*/
+
+/* ########################### sessão de projectos ########################## 
 section.Princ{
   border: 5px solid green;
   width: 100%;
-  height: 500px;
+  height: 110vh;
 }
 section.Princ h2{
   text-align: center;
-  margin-top: 20px;
+  margin: 90px 0px 50px 0px;
   border: 2px solid red;
   padding: 0;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 section.Princ .grid-container{
  justify-content: space-between;
  display: flex;
  width: 95%;
- height: 350px;
+ height: 70vh;
  border: 2px solid red;
  margin: 30px auto;
 }
@@ -143,7 +159,7 @@ section.Princ .grid-container{
 section.Princ div.grid-container article{
   border: 2px solid blue;
   width: 30%;
-  height: 300px;
+  height: 60vh;
   margin: 10px;
 
 }
@@ -153,8 +169,487 @@ section.Princ div.grid-container article img{
 }
 
 footer{
-  height: 200px;
+  height: 50vh;
   border: 2px solid red;
   background-image: url(../IMG/R.png);
   color: white;
+} */
+
+
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+/* Remove as margens e espaçamentos padrão do navegador.
+   Também facilita o cálculo do tamanho dos elementos. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Define as configurações gerais do documento. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Cor de fundo principal usada no portfólio. */
+    background-color: rgb(75, 72, 72);
+
+    /* Cor padrão dos textos. */
+    color: aliceblue;
+
+    /* Impede o aparecimento de scroll horizontal. */
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+/* Barra de navegação fixa no topo da página. */
+header.barra-nav {
+    width: 100%;
+
+    height: 70px;
+
+    /* Mantém o menu visível durante o scroll. */
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    /* Faz o header ficar acima dos restantes elementos. */
+    z-index: 1000;
+
+    /* Fundo escuro semitransparente. */
+    background-color: rgba(30, 30, 30, 0.95);
+}
+
+
+/* Contentor interno do header. */
+header .painel {
+    width: 90%;
+
+    height: 100%;
+
+    margin: auto;
+
+    /* Coloca nome e menu na mesma linha. */
+    display: flex;
+
+    /* Nome à esquerda e menu à direita. */
+    justify-content: space-between;
+
+    /* Alinha os elementos verticalmente. */
+    align-items: center;
+}
+
+
+/* =========================================================
+   NOME DO PORTFÓLIO
+   ========================================================= */
+
+/* Estiliza o nome Nuno Pinto. */
+header .painel h1 {
+    font-size: 28px;
+}
+
+
+/* Estiliza o link do nome. */
+header .painel h1 a {
+    color: ghostwhite;
+
+    /* Remove o sublinhado. */
+    text-decoration: none;
+}
+
+
+/* Efeito quando o rato passa sobre o nome. */
+header .painel h1 a:hover {
+    color: rgb(0, 188, 212);
+}
+
+
+/* =========================================================
+   MENU DE NAVEGAÇÃO
+   ========================================================= */
+
+/* Define a largura do menu. */
+header .nav-bar {
+    width: 40%;
+}
+
+
+/* Organiza os elementos da lista horizontalmente. */
+header .nav-bar ul {
+    width: 100%;
+
+    display: flex;
+
+    /* Distribui os links pelo espaço disponível. */
+    justify-content: space-between;
+
+    align-items: center;
+
+    /* Remove os marcadores da lista. */
+    list-style: none;
+}
+
+
+/* Estiliza os links do menu. */
+header .nav-bar ul li a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    /* Suaviza a mudança de cor no hover. */
+    transition: 0.3s;
+}
+
+
+/* Altera a cor do link ao passar o rato. */
+header .nav-bar ul li a:hover {
+    color: rgb(0, 188, 212);
+}
+
+
+/* =========================================================
+   SECÇÃO HOME
+   ========================================================= */
+
+/* Primeira área visual do site. */
+section.Home {
+    width: 100%;
+
+    /* Ocupa pelo menos a altura total da janela. */
+    min-height: 100vh;
+
+    /* Imagem + camada escura por cima. */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url(../IMG/R.png);
+
+    /* Faz a imagem preencher a área. */
+    background-size: cover;
+
+    /* Centraliza a imagem. */
+    background-position: center;
+
+    /* Evita que o header cubra o conteúdo. */
+    padding-top: 70px;
+
+    /* Permite centralizar a apresentação. */
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================================
+   APRESENTAÇÃO
+   ========================================================= */
+
+/* Área onde está o texto de apresentação. */
+section.apresentacao {
+    width: 90%;
+
+    max-width: 1000px;
+
+    /* Centraliza todo o texto. */
+    text-align: center;
+}
+
+
+/* Contentor dos textos. */
+div.Apre1 {
+    width: 100%;
+}
+
+
+/* Mensagem "Seja bem-vindo!". */
+div.Apre1 h6 {
+    font-size: 18px;
+
+    margin-bottom: 15px;
+
+    font-weight: bold;
+}
+
+
+/* Nome principal. */
+div.Apre1 h1 {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Cargo/área profissional. */
+div.Apre1 h2 {
+    font-size: 25px;
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+
+/* Descrição sobre o estudante. */
+div.Apre1 p {
+    width: 70%;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 18px;
+
+    /* Melhora a leitura do texto. */
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SECÇÃO DE PROJETOS
+   ========================================================= */
+
+/* Área onde ficam os projetos. */
+section.Princ {
+    width: 100%;
+
+    /* Permite que a altura seja determinada pelo conteúdo. */
+    min-height: 100vh;
+
+    padding: 80px 0;
+}
+
+
+/* Título "Projetos". */
+section.Princ > h2 {
+    text-align: center;
+
+    font-size: 45px;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================================================
+   CONTENTOR DOS PROJETOS
+   ========================================================= */
+
+/* Organiza os três cartões. */
+section.Princ .grid-container {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    /* Coloca os projetos lado a lado. */
+    display: flex;
+
+    justify-content: space-between;
+
+    /* Espaçamento entre os cartões. */
+    gap: 30px;
+}
+
+
+/* =========================================================
+   CARTÃO DOS PROJETOS
+   ========================================================= */
+
+/* Cada article representa um projeto. */
+section.Princ .grid-container .item {
+    width: 33.33%;
+
+    background-color: rgb(45, 43, 43);
+
+    /* Arredonda os cantos do cartão. */
+    border-radius: 8px;
+
+    /* Impede que a imagem ultrapasse o cartão. */
+    overflow: hidden;
+
+    /* Centraliza os conteúdos. */
+    text-align: center;
+
+    /* Espaçamento inferior. */
+    padding-bottom: 25px;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES DO PROJETO
+   ========================================================= */
+
+/* Área que contém título e descrição. */
+section.Princ .item .info {
+    padding: 20px;
+}
+
+
+/* Nome do projeto. */
+section.Princ .item .tema {
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Descrição do projeto. */
+section.Princ .item .info p {
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   IMAGEM DOS PROJETOS
+   ========================================================= */
+
+/* Define o tamanho das imagens. */
+section.Princ .item img {
+    width: 100%;
+
+    height: 220px;
+
+    /* Impede que a imagem fique deformada. */
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   ESTADO DO PROJETO
+   ========================================================= */
+
+/* Estiliza o texto "Brevemente". */
+section.Princ .item h4 {
+    font-size: 17px;
+
+    margin-top: 20px;
+
+    color: rgb(0, 188, 212);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+/* Área inferior do portfólio. */
+footer {
+    min-height: 40vh;
+
+    /* Mantém a mesma imagem utilizada na Home. */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url(../IMG/R.png);
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    /* Centraliza o conteúdo. */
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/* Estas regras serão utilizadas em ecrãs menores,
+   como tablets e telemóveis. */
+@media (max-width: 768px) {
+
+    /* Permite que o header cresça quando necessário. */
+    header.barra-nav {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+
+    /* Coloca nome e menu verticalmente. */
+    header .painel {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    /* O menu passa a ocupar toda a largura disponível. */
+    header .nav-bar {
+        width: 100%;
+    }
+
+
+    /* Centraliza os links. */
+    header .nav-bar ul {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* Reduz o tamanho do nome principal. */
+    div.Apre1 h1 {
+        font-size: 42px;
+    }
+
+
+    /* Reduz o tamanho do título profissional. */
+    div.Apre1 h2 {
+        font-size: 20px;
+    }
+
+
+    /* Aumenta a largura disponível para o texto. */
+    div.Apre1 p {
+        width: 90%;
+    }
+
+
+    /* Coloca os projetos um abaixo do outro. */
+    section.Princ .grid-container {
+        flex-direction: column;
+    }
+
+
+    /* Cada projeto ocupa toda a largura. */
+    section.Princ .grid-container .item {
+        width: 100%;
+    }
+
+
+    /* Reduz o tamanho do título da secção. */
+    section.Princ > h2 {
+        font-size: 35px;
+    }
+
 }
