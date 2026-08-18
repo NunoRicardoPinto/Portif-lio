@@ -1,0 +1,431 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+/* Remove os espaçamentos padrão e facilita o
+   cálculo das dimensões dos elementos. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Configurações gerais da página. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Mesma cor utilizada nas outras páginas. */
+    background-color: rgb(75, 72, 72);
+
+    color: aliceblue;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+/* Barra de navegação fixa. */
+.barra-nav {
+    width: 100%;
+
+    height: 70px;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    background-color: rgba(30, 30, 30, 0.95);
+}
+
+
+/* Organização interna do header. */
+.painel {
+    width: 90%;
+
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* Nome do portfólio. */
+.painel h1 {
+    font-size: 28px;
+}
+
+
+/* Link do nome. */
+.painel h1 a {
+    color: ghostwhite;
+
+    text-decoration: none;
+}
+
+
+/* Efeito ao passar o rato. */
+.painel h1 a:hover {
+    color: rgb(0, 188, 212);
+}
+
+
+/* =========================================================
+   MENU
+   ========================================================= */
+
+/* Define a largura do menu. */
+.nav-bar {
+    width: 40%;
+}
+
+
+/* Organiza os links horizontalmente. */
+.nav-bar ul {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    list-style: none;
+}
+
+
+/* Estiliza os links. */
+.nav-bar a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito ao passar o rato sobre o link. */
+.nav-bar a:hover {
+    color: rgb(0, 188, 212);
+}
+
+
+/* =========================================================
+   CONTEÚDO PRINCIPAL
+   ========================================================= */
+
+/* Área principal da página. */
+main {
+    width: 90%;
+
+    max-width: 1100px;
+
+    /* Espaço para o header fixo. */
+    padding-top: 120px;
+
+    padding-bottom: 80px;
+
+    margin: auto;
+}
+
+
+/* Título principal. */
+main > h2 {
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================================================
+   CONTAINER DO CONTACTO
+   ========================================================= */
+
+/* Coloca formulário e redes sociais lado a lado. */
+.contacto-container {
+    display: flex;
+
+    gap: 50px;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+/* Área do formulário. */
+.formulario {
+    width: 60%;
+
+    background-color: rgb(45, 43, 43);
+
+    padding: 30px;
+
+    border-radius: 8px;
+}
+
+
+/* Título do formulário. */
+.formulario h3 {
+    font-size: 26px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Cada campo do formulário. */
+.campo {
+    margin-bottom: 20px;
+}
+
+
+/* Texto que identifica cada campo. */
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 17px;
+}
+
+
+/* Estilização dos campos de texto e email. */
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid rgb(100, 100, 100);
+
+    border-radius: 5px;
+
+    background-color: rgb(60, 58, 58);
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+/* Muda a borda quando o utilizador seleciona o campo. */
+.campo input:focus,
+.campo textarea:focus {
+    border-color: rgb(0, 188, 212);
+}
+
+
+/* Impede que o textarea seja redimensionado horizontalmente. */
+.campo textarea {
+    resize: vertical;
+}
+
+
+/* Texto dentro dos inputs. */
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: rgb(190, 190, 190);
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+/* Botão de envio. */
+.formulario button {
+    padding: 12px 25px;
+
+    border: 1px solid rgb(0, 188, 212);
+
+    border-radius: 5px;
+
+    background-color: rgb(0, 188, 212);
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito quando o rato passa pelo botão. */
+.formulario button:hover {
+    background-color: transparent;
+
+    color: rgb(0, 188, 212);
+}
+
+
+/* =========================================================
+   REDES SOCIAIS
+   ========================================================= */
+
+/* Área das redes sociais. */
+.redes {
+    width: 40%;
+
+    background-color: rgb(45, 43, 43);
+
+    padding: 30px;
+
+    border-radius: 8px;
+}
+
+
+/* Título das redes sociais. */
+.redes h3 {
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Texto introdutório. */
+.redes p {
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Remove os marcadores da lista. */
+.redes ul {
+    list-style: none;
+}
+
+
+/* Espaçamento entre as redes. */
+.redes li {
+    margin-bottom: 15px;
+}
+
+
+/* Links das redes sociais. */
+.redes a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito ao passar o rato. */
+.redes a:hover {
+    color: rgb(0, 188, 212);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+/* Rodapé da página. */
+footer {
+    min-height: 25vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url(../IMG/R.png);
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/* Adaptação para tablets e telemóveis. */
+@media (max-width: 768px) {
+
+    /* Header passa a ocupar o espaço necessário. */
+    .barra-nav {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+
+    /* Nome e menu ficam um abaixo do outro. */
+    .painel {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    /* Menu ocupa toda a largura. */
+    .nav-bar {
+        width: 100%;
+    }
+
+
+    /* Links ficam centralizados. */
+    .nav-bar ul {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* Formulário e redes sociais ficam
+       um abaixo do outro. */
+    .contacto-container {
+        flex-direction: column;
+    }
+
+
+    /* Ambos ocupam toda a largura. */
+    .formulario,
+    .redes {
+        width: 100%;
+    }
+
+
+    /* Reduz o título em ecrãs pequenos. */
+    main > h2 {
+        font-size: 32px;
+    }
+
+}
