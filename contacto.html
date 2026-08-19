@@ -2,147 +2,65 @@
 <html lang="pt">
 
 <head>
-    <!-- Define a codificação dos caracteres -->
     <meta charset="UTF-8">
-
-    <!-- Permite que a página seja responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título apresentado na aba do navegador -->
     <title>Contacto | Nuno Pinto</title>
-
-    <!-- Liga o HTML ao ficheiro CSS -->
     <link rel="stylesheet" href="CSS/contacto.css">
 </head>
 
 
 <body>
-
-    <!-- =====================================================
-         HEADER
-         Mantém a mesma navegação das outras páginas.
-         ===================================================== -->
-
     <header class="barra-nav">
-
         <!-- Painel principal da navegação -->
         <div class="painel">
-
-            <!-- Nome do proprietário do portfólio -->
-            <h1>
-                <a href="index.html">Nuno Pinto</a>
-            </h1>
-
+            <h1><a href="index.html">Nuno Pinto</a></h1>
 
             <!-- Menu de navegação -->
             <nav class="nav-bar">
-
                 <ul>
-
                     <!-- Página inicial -->
-                    <li>
-                        <a href="index.html">Casa</a>
-                    </li>
-
+                    <li><a href="index.html">Início</a></li>
                     <!-- Secção de projetos -->
-                    <li>
-                        <a href="index.html#projetos">Projetos</a>
-                    </li>
-
+                    <li><a href="index.html#projetos">Projetos</a></li>
                     <!-- Página sobre -->
-                    <li>
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-
+                    <li><a href="sobre.html">Sobre</a></li>
                     <!-- Página atual -->
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
-
             </nav>
-
         </div>
 
     </header>
 
-
-    <!-- =====================================================
-         CONTEÚDO PRINCIPAL
-         ===================================================== -->
-
-    <main>
-
-        <!-- Título da página -->
+    <!-- ======== CONTEÚDO PRINCIPAL ========== -->
+    <main style=" border: 2px solid red;">
         <h2>Entre em contacto</h2>
 
-
-        <!-- =================================================
-             ÁREA DE CONTACTO
-             Contém o formulário e as redes sociais.
-             ================================================= -->
-
-        <section class="contacto-container">
-
-
-            <!-- =================================================
-                 FORMULÁRIO
-                 ================================================= -->
-
-            <section class="formulario">
-
-                <!-- Título do formulário -->
+        <!-- ======= ÁREA DE CONTACTO e redes sociais. ======== -->
+        <section class="contacto-container" style=" border: 2px solid yellow;">
+            <!-- ========= FORMULÁRIO ============ -->
+            <section class="formulario" style=" border: 2px solid blue;">
+                <!-- Título -->
                 <h3>Envie uma mensagem</h3>
-
-
                 <!-- Formulário de contacto -->
-                <form>
 
-                    <!-- Campo para o nome -->
-                    <div class="campo">
-
+                <form style=" border: 2px solid red;">
+                    <!-- Campo para nome -->
+                    <div class="campo" style=" border: 2px solid green;">
                         <label for="nome">Nome</label>
-
-                        <input
-                            type="text"
-                            id="nome"
-                            name="nome"
-                            placeholder="Digite o seu nome"
-                        >
-
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
                     </div>
-
-
-                    <!-- Campo para o email -->
+                    <!-- Campo para email -->
                     <div class="campo">
-
                         <label for="email">Email</label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Digite o seu email"
-                        >
-
+                        <input type="email" id="email" name="email" placeholder="Digite o seu email">
                     </div>
-
-
-                    <!-- Campo para a mensagem -->
+                    <!-- Campo para mensagem -->
                     <div class="campo">
-
                         <label for="mensagem">Mensagem</label>
-
-                        <textarea
-                            id="mensagem"
-                            name="mensagem"
-                            rows="6"
-                            placeholder="Escreva a sua mensagem..."
-                        ></textarea>
-
+                        <textarea id="mensagem" name="mensagem" rows="6"
+                            placeholder="Escreva a sua mensagem..."></textarea>
                     </div>
-
 
                     <!-- Botão para enviar o formulário -->
                     <button type="submit">
@@ -152,90 +70,81 @@
                 </form>
 
             </section>
-            <!-- =================================================
-                 REDES SOCIAIS
-                 ================================================= -->
+
+            <!-- ========= REDES SOCIAIS =========== -->
 
             <section class="redes">
                 <!-- Título da área -->
                 <h3>Minhas redes</h3>
-                <!-- Pequena explicação -->
+                <!-- Explicação -->
                 <p>
                     Também podes encontrar-me através das
                     minhas redes sociais e profissionais.
                 </p>
-                <!-- Lista de redes sociais -->
                 <ul>
                     <!-- GitHub -->
-                    <li>
-                        <a href="https://github.com/NunoRicardoPinto">GitHub</a></li>
+                    <li><a href="https://github.com/NunoRicardoPinto">GitHub</a></li>
                     <!-- LinkedIn -->
                     <li><a href="http://linkedin.com/in/nuno-pinto-9a8467287">LinkedIn</a></li>
                     <!-- Indisponível -->
                     <!-- <li><a href="#">Instagram</a></li> -->
-
                 </ul>
-
             </section>
-
         </section>
-
     </main>
 
 
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
+    <!-- =============== FOOTER ================= -->
 
     <footer>
-            <footer>
-        <div class="direcoes">
-            <!-- Identidade -->
-            <div class="footer-info">
-                <h2>Nuno <span>Pinto</span></h2>
-                <h3>Front-End Developer</h3>
-                <p>
-                    Desenvolvedor web dedicado  e motivado
-                    a desenvolver soluções e experiências digitais 
-                    que capazes de ajudar os angolanos e o mundo. 
-                    Sempre aprendendo e evoluindo.
-                </p>
-            </div>
-            <!-- Links -->
-            <div class="footer-links link">
-                <h3>Links rápidos</h3>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="index.html#projetos">Projetos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <!-- Redes sociais -->
-            <div class="footer-social link">
-                <h3>Redes sociais</h3>
+        <footer>
+            <div class="direcoes">
+                <!-- Identidade -->
+                <div class="footer-info">
+                    <h2>Nuno <span>Pinto</span></h2>
+                    <h3>Front-End Developer</h3>
+                    <p>
+                        Desenvolvedor web dedicado e motivado
+                        a desenvolver soluções e experiências digitais
+                        que capazes de ajudar os angolanos e o mundo.
+                        Sempre aprendendo e evoluindo.
+                    </p>
+                </div>
+                <!-- Links -->
+                <div class="footer-links link">
+                    <h3>Links rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="index.html#projetos">Projetos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Redes sociais -->
+                <div class="footer-social link">
+                    <h3>Redes sociais</h3>
 
-                <ul>
-                    <li><a href="https://github.com/NunoRicardoPinto" target="_blank">GitHub</a></li>
-                    <li><a href="http://linkedin.com/in/nuno-pinto-9a8467287" target="_blank">LinkedIn</a></li>
-                    <!-- <li><a href="#" target="_blank">Instagram</a></li> Não tenho no momento -->
-                </ul>
+                    <ul>
+                        <li><a href="https://github.com/NunoRicardoPinto" target="_blank">GitHub</a></li>
+                        <li><a href="http://linkedin.com/in/nuno-pinto-9a8467287" target="_blank">LinkedIn</a></li>
+                        <!-- <li><a href="#" target="_blank">Instagram</a></li> Não tenho no momento -->
+                    </ul>
+                </div>
+
+                <div class="contacto link">
+                    <h3>Redes sociais</h3>
+
+                    <ul>
+                        <li><a href="#" target="_blank">nunoricardopinto62@gmail.com</a></li>
+                        <li><a href="#" target="_blank">Luanda Angola</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="contacto link">
-                <h3>Redes sociais</h3>
-
-                <ul>
-                    <li><a href="#" target="_blank">nunoricardopinto62@gmail.com</a></li>
-                    <li><a href="#" target="_blank">Luanda Angola</a></li>
-                </ul>
+            <div class="copyright">
+                <p>&copy; 2026 Nuno <span>Pinto</span>. Todos os direitos reservados.</p>
             </div>
-        </div>
-
-        <div class="copyright">
-            <p>&copy; 2026 Nuno <span>Pinto</span>. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+        </footer>
     </footer>
 
 
