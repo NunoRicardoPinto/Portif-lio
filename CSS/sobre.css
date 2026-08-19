@@ -124,12 +124,10 @@ div.perfil {
     flex-direction: row;
     /* Espaçamento entre as duas áreas. */
     gap: 40px;
-    /* Fundo branco para destacar o conteúdo. */
+    /* Fundo cinza para destacar o conteúdo. */
   background-color: rgb(45, 43, 43);
-
-    /* Espaçamento interno. */
+    /* Espaçamento interno. Deixa o texto e a imagem mais centralizados*/
     padding: 40px;
-
     /* Arredonda ligeiramente os cantos. */
     border-radius: 10px;
 
@@ -138,13 +136,11 @@ div.perfil {
 }
 
 
-/* =========================================================
-   ÁREA DA IMAGEM
-   ========================================================= */
+/* ================ ÁREA DA IMAGEM ================== */
 
 /* Define o espaço ocupado pela imagem. */
 section.imagem {
-    width: 40%;
+    width: 70%;
 
     /* Centraliza a imagem dentro da seção. */
     display: flex;
@@ -157,24 +153,21 @@ section.imagem {
 
 /* Define o tamanho e aparência da fotografia. */
 section.imagem img {
-    width: 280px;
-
-    height: 280px;
+    width: 80%;
+    height: 70vh;
 
     /* Faz a imagem ocupar o espaço sem ficar deformada. */
     object-fit: cover;
 
-    /* Transforma a imagem em aproximadamente circular. */
-    border-radius: 50%;
+    /* O " % " Transforma a imagem em aproximadamente circular. */
+    border-radius: 3%;
 
-    /* Cria uma pequena borda ao redor da fotografia. */
+    /* Pequena borda ao redor da fotografia. */
     border: 5px solid #222;
 }
 
 
-/* =========================================================
-   ÁREA DO TEXTO
-   ========================================================= */
+/* ========== ÁREA DO TEXTO ========= */
 
 /* Define o espaço ocupado pelo texto. */
 section.texto {
