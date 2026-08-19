@@ -1,9 +1,4 @@
-/* =========================================================
-   CONFIGURAÇÕES GERAIS
-   ========================================================= */
-
-/* Remove os espaçamentos padrão e facilita o
-   cálculo das dimensões dos elementos. */
+/* =========  CONFIGURAÇÕES GERAIS =========== */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +7,7 @@
 
 /* Configurações gerais da página. */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Times New Roman', Times, serif;
 
   /* Mesma cor utilizada nas outras páginas. */
   background-color: rgb(75, 72, 72);
@@ -22,8 +17,7 @@ body {
   min-height: 100vh;
 }
 
-/* =========================================================
-   HEADER
+/* ========== HEADER
    ========================================================= */
 
 /* Barra de navegação fixa. */
@@ -334,9 +328,7 @@ footer {
   text-align: center;
 }
 
-/* =========================================================
-   RESPONSIVIDADE
-   ========================================================= */
+/* =========== RESPONSIVIDADE ============== */
 
 /* Adaptação para tablets e telemóveis. */
 @media (max-width: 768px) {

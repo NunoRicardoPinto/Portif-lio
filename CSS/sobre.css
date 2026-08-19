@@ -16,10 +16,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
     /* Define uma cor de fundo clara para a página. */
-    background-color: #f4f4f4;
+     background-color: rgb(75, 72, 72);
 
     /* Define a cor padrão dos textos. */
-    color: #222;
+    color: aliceblue;
 
     /* Define a altura mínima da página. */
     min-height: 100vh;
@@ -107,17 +107,12 @@ main {
 /* Título "Sobre o Nuno Pinto". */
 .sobre > h2 {
     text-align: center;
-
-    /* Espaço abaixo do título. */
     margin-bottom: 35px;
-
     font-size: 32px;
 }
 
 
-/* =========================================================
-   ÁREA DO PERFIL
-   ========================================================= */
+/* ============ ÁREA DO PERFIL =============== */
 
 /* Este é o elemento que já existia no teu código.
    Em vez de float, usamos Flexbox para organizar
@@ -127,12 +122,10 @@ div.perfil {
 
     /* Mantém a imagem e o texto lado a lado. */
     flex-direction: row;
-
     /* Espaçamento entre as duas áreas. */
     gap: 40px;
-
     /* Fundo branco para destacar o conteúdo. */
-    background-color: white;
+  background-color: rgb(45, 43, 43);
 
     /* Espaçamento interno. */
     padding: 40px;
