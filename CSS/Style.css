@@ -84,8 +84,6 @@ header div.painel .nav-bar ul li a {
 }
 /* ########################### fim da estilização do header ################### */
 
-
-
 /* ############################   segunda section class apresentacao  ################## */
 
 /* section.apresentacao{
@@ -104,7 +102,7 @@ section.apresentacao div.Apre1 h6{
   text-align: center;
   border: 5px solid yellow;
   /* opacity: 90%; */
- /* font-weight: bold;
+/* font-weight: bold;
   margin: 1px auto;
 }
 
@@ -175,7 +173,6 @@ footer{
   color: white;
 } */
 
-
 /* =========================================================
    CONFIGURAÇÕES GERAIS
    ========================================================= */
@@ -183,26 +180,24 @@ footer{
 /* Remove as margens e espaçamentos padrão do navegador.
    Também facilita o cálculo do tamanho dos elementos. */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 
 /* Define as configurações gerais do documento. */
 body {
-     font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 
-    /* Cor de fundo principal usada no portfólio. */
-    background-color: rgb(75, 72, 72);
+  /* Cor de fundo principal usada no portfólio. */
+  background-color: rgb(75, 72, 72);
 
-    /* Cor padrão dos textos. */
-    color: aliceblue;
+  /* Cor padrão dos textos. */
+  color: aliceblue;
 
-    /* Impede o aparecimento de scroll horizontal. */
-    overflow-x: hidden;
+  /* Impede o aparecimento de scroll horizontal. */
+  overflow-x: hidden;
 }
-
 
 /* =========================================================
    HEADER
@@ -210,42 +205,26 @@ body {
 
 /* Barra de navegação fixa no topo da página. */
 header.barra-nav {
-    width: 100%;
-
-    height: 70px;
-
-    /* Mantém o menu visível durante o scroll. */
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    /* Faz o header ficar acima dos restantes elementos. */
-    z-index: 1000;
-
-    /* Fundo escuro semitransparente. */
-    background-color: rgba(30, 30, 30, 0.95);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Faz o header ficar acima dos restantes elementos. */
+  z-index: 1000;
+  /* O querto valor é a opacidade deixa transparente. */
+  background-color: rgba(30, 30, 30, 0.95);
 }
 
-
-/* Contentor interno do header. */
 header .painel {
-    width: 90%;
-
-    height: 100%;
-
-    margin: auto;
-
-    /* Coloca nome e menu na mesma linha. */
-    display: flex;
-
-    /* Nome à esquerda e menu à direita. */
-    justify-content: space-between;
-
-    /* Alinha os elementos verticalmente. */
-    align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* Alinha os elementos orizontalmente. */
+  align-items: center;
 }
-
 
 /* =========================================================
    NOME DO PORTFÓLIO
@@ -253,24 +232,18 @@ header .painel {
 
 /* Estiliza o nome Nuno Pinto. */
 header .painel h1 {
-    font-size: 28px;
+  font-size: 28px;
 }
-
 
 /* Estiliza o link do nome. */
 header .painel h1 a {
-    color: ghostwhite;
-
-    /* Remove o sublinhado. */
-    text-decoration: none;
+  color: ghostwhite;
+  text-decoration: none;
 }
 
-
-/* Efeito quando o rato passa sobre o nome. */
 header .painel h1 a:hover {
-    color: rgb(0, 188, 212);
+  color: rgb(0, 188, 212);
 }
-
 
 /* =========================================================
    MENU DE NAVEGAÇÃO
@@ -278,44 +251,32 @@ header .painel h1 a:hover {
 
 /* Define a largura do menu. */
 header .nav-bar {
-    width: 40%;
+  width: 40%;
 }
-
 
 /* Organiza os elementos da lista horizontalmente. */
 header .nav-bar ul {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  /* Distribui os links pelo espaço disponível. */
+  justify-content: space-between;
+  align-items: center;
 
-    display: flex;
-
-    /* Distribui os links pelo espaço disponível. */
-    justify-content: space-between;
-
-    align-items: center;
-
-    /* Remove os marcadores da lista. */
-    list-style: none;
+  /* Remove os marcadores da lista. */
+  list-style: none;
 }
-
 
 /* Estiliza os links do menu. */
 header .nav-bar ul li a {
-    color: white;
-
-    text-decoration: none;
-
-    font-size: 18px;
-
-    /* Suaviza a mudança de cor no hover. */
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
-
-/* Altera a cor do link ao passar o rato. */
 header .nav-bar ul li a:hover {
-    color: rgb(0, 188, 212);
+  color: rgb(0, 188, 212);
 }
-
 
 /* =========================================================
    SECÇÃO HOME
@@ -323,36 +284,31 @@ header .nav-bar ul li a:hover {
 
 /* Primeira área visual do site. */
 section.Home {
-    width: 100%;
+  width: 100%;
 
-    /* Ocupa pelo menos a altura total da janela. */
-    min-height: 100vh;
+  /* Ocupa pelo menos a altura total da janela. */
+  min-height: 100vh;
 
-    /* Imagem + camada escura por cima. */
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-        ),
-        url(../IMG/R.png);
+  /* Imagem + camada escura por cima. */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/R.png);
 
-    /* Faz a imagem preencher a área. */
-    background-size: cover;
+  /* Faz a imagem preencher a área. */
+  background-size: cover;
 
-    /* Centraliza a imagem. */
-    background-position: center;
+  /* Centraliza a imagem. */
+  background-position: center;
 
-    /* Evita que o header cubra o conteúdo. */
-    padding-top: 70px;
+  /* Evita que o header cubra o conteúdo. */
+  padding-top: 70px;
 
-    /* Permite centralizar a apresentação. */
-    display: flex;
+  /* Permite centralizar a apresentação. */
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    justify-content: center;
+  justify-content: center;
 }
-
 
 /* =========================================================
    APRESENTAÇÃO
@@ -360,63 +316,45 @@ section.Home {
 
 /* Área onde está o texto de apresentação. */
 section.apresentacao {
-    width: 90%;
-
-    max-width: 1000px;
-
-    /* Centraliza todo o texto. */
-    text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
 }
-
 
 /* Contentor dos textos. */
 div.Apre1 {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* Mensagem "Seja bem-vindo!". */
 div.Apre1 h6 {
-    font-size: 18px;
-
-    margin-bottom: 15px;
-
-    font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
-
 
 /* Nome principal. */
 div.Apre1 h1 {
-    font-size: 60px;
-
-    margin-bottom: 15px;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
-
 
 /* Cargo/área profissional. */
 div.Apre1 h2 {
-    font-size: 25px;
-
-    font-weight: normal;
-
-    margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 25px;
 }
-
 
 /* Descrição sobre o estudante. */
 div.Apre1 p {
-    width: 70%;
-
-    max-width: 700px;
-
-    margin: 0 auto;
-
-    font-size: 18px;
-
-    /* Melhora a leitura do texto. */
-    line-height: 1.7;
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  /* Melhora a leitura do texto. */
+  line-height: 1.7;
 }
-
 
 /* =========================================================
    SECÇÃO DE PROJETOS
@@ -424,24 +362,17 @@ div.Apre1 p {
 
 /* Área onde ficam os projetos. */
 section.Princ {
-    width: 100%;
-
-    /* Permite que a altura seja determinada pelo conteúdo. */
-    min-height: 100vh;
-
-    padding: 80px 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
 }
-
 
 /* Título "Projetos". */
 section.Princ > h2 {
-    text-align: center;
-
-    font-size: 45px;
-
-    margin-bottom: 50px;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 50px;
 }
-
 
 /* =========================================================
    CONTENTOR DOS PROJETOS
@@ -449,21 +380,14 @@ section.Princ > h2 {
 
 /* Organiza os três cartões. */
 section.Princ .grid-container {
-    width: 90%;
-
-    max-width: 1200px;
-
-    margin: auto;
-
-    /* Coloca os projetos lado a lado. */
-    display: flex;
-
-    justify-content: space-between;
-
-    /* Espaçamento entre os cartões. */
-    gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* Espaçamento entre os cartões. */
+  gap: 30px;
 }
-
 
 /* =========================================================
    CARTÃO DOS PROJETOS
@@ -471,23 +395,14 @@ section.Princ .grid-container {
 
 /* Cada article representa um projeto. */
 section.Princ .grid-container .item {
-    width: 33.33%;
-
-    background-color: rgb(45, 43, 43);
-
-    /* Arredonda os cantos do cartão. */
-    border-radius: 8px;
-
-    /* Impede que a imagem ultrapasse o cartão. */
-    overflow: hidden;
-
-    /* Centraliza os conteúdos. */
-    text-align: center;
-
-    /* Espaçamento inferior. */
-    padding-bottom: 25px;
+  width: 33.33%;
+  background-color: rgb(45, 43, 43);
+  border-radius: 8px;
+  /* Impede que a imagem ultrapasse o cartão. */
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 25px;
 }
-
 
 /* =========================================================
    INFORMAÇÕES DO PROJETO
@@ -495,25 +410,22 @@ section.Princ .grid-container .item {
 
 /* Área que contém título e descrição. */
 section.Princ .item .info {
-    padding: 20px;
+  padding: 20px;
 }
-
 
 /* Nome do projeto. */
 section.Princ .item .tema {
-    font-size: 24px;
+  font-size: 24px;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 
 /* Descrição do projeto. */
 section.Princ .item .info p {
-    font-size: 16px;
+  font-size: 16px;
 
-    line-height: 1.6;
+  line-height: 1.6;
 }
-
 
 /* =========================================================
    IMAGEM DOS PROJETOS
@@ -521,61 +433,20 @@ section.Princ .item .info p {
 
 /* Define o tamanho das imagens. */
 section.Princ .item img {
-    width: 100%;
-
-    height: 220px;
-
-    /* Impede que a imagem fique deformada. */
-    object-fit: cover;
+  width: 100%;
+  height: 220px;
+  /* Impede que a imagem fique deformada. */
+  object-fit: cover;
 }
 
+/* ============== ESTADO DO PROJETO ==================== */
 
-/* =========================================================
-   ESTADO DO PROJETO
-   ========================================================= */
-
-/* Estiliza o texto "Brevemente". */
+/* texto "Brevemente". */
 section.Princ .item h4 {
-    font-size: 17px;
-
-    margin-top: 20px;
-
-    color: rgb(0, 188, 212);
+  font-size: 17px;
+  margin-top: 20px;
+  color: rgb(0, 188, 212);
 }
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-/* Área inferior do portfólio. */
-footer {
-    min-height: 40vh;
-
-    /* Mantém a mesma imagem utilizada na Home. */
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0.75)
-        ),
-        url(../IMG/R.png);
-
-    background-size: cover;
-
-    background-position: center;
-
-    color: white;
-
-    /* Centraliza o conteúdo. */
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-}
-
 
 /* =========================================================
    RESPONSIVIDADE
@@ -584,141 +455,136 @@ footer {
 /* Estas regras serão utilizadas em ecrãs menores,
    como tablets e telemóveis. */
 @media (max-width: 768px) {
+  /* Permite que o header cresça quando necessário. */
+  header.barra-nav {
+    height: auto;
 
-    /* Permite que o header cresça quando necessário. */
-    header.barra-nav {
-        height: auto;
+    padding: 15px 0;
+  }
 
-        padding: 15px 0;
-    }
+  /* Coloca nome e menu verticalmente. */
+  header .painel {
+    flex-direction: column;
 
+    gap: 15px;
+  }
 
-    /* Coloca nome e menu verticalmente. */
-    header .painel {
-        flex-direction: column;
+  /* O menu passa a ocupar toda a largura disponível. */
+  header .nav-bar {
+    width: 100%;
+  }
 
-        gap: 15px;
-    }
+  /* Centraliza os links. */
+  header .nav-bar ul {
+    justify-content: center;
 
+    gap: 20px;
 
-    /* O menu passa a ocupar toda a largura disponível. */
-    header .nav-bar {
-        width: 100%;
-    }
+    flex-wrap: wrap;
+  }
 
+  /* Reduz o tamanho do nome principal. */
+  div.Apre1 h1 {
+    font-size: 42px;
+  }
 
-    /* Centraliza os links. */
-    header .nav-bar ul {
-        justify-content: center;
+  /* Reduz o tamanho do título profissional. */
+  div.Apre1 h2 {
+    font-size: 20px;
+  }
 
-        gap: 20px;
+  /* Aumenta a largura disponível para o texto. */
+  div.Apre1 p {
+    width: 90%;
+  }
 
-        flex-wrap: wrap;
-    }
+  /* Coloca os projetos um abaixo do outro. */
+  section.Princ .grid-container {
+    flex-direction: column;
+  }
 
+  /* Cada projeto ocupa toda a largura. */
+  section.Princ .grid-container .item {
+    width: 100%;
+  }
 
-    /* Reduz o tamanho do nome principal. */
-    div.Apre1 h1 {
-        font-size: 42px;
-    }
-
-
-    /* Reduz o tamanho do título profissional. */
-    div.Apre1 h2 {
-        font-size: 20px;
-    }
-
-
-    /* Aumenta a largura disponível para o texto. */
-    div.Apre1 p {
-        width: 90%;
-    }
-
-
-    /* Coloca os projetos um abaixo do outro. */
-    section.Princ .grid-container {
-        flex-direction: column;
-    }
-
-
-    /* Cada projeto ocupa toda a largura. */
-    section.Princ .grid-container .item {
-        width: 100%;
-    }
-
-
-    /* Reduz o tamanho do título da secção. */
-    section.Princ > h2 {
-        font-size: 35px;
-    }
-
+  /* Reduz o tamanho do título da secção. */
+  section.Princ > h2 {
+    font-size: 35px;
+  }
 }
 
 /* ======== FOOTER ======== */
-footer{
-  background: #1E1E1E;
-  flex-direction: column;
 
+footer {
+  background: #1e1e1e;
+  flex-direction: column;
+  min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/
+  color: white;
+  /* Centraliza o conteúdo. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-footer div.direcoes{
+footer div.direcoes {
   height: 25vh;
 }
-footer h3{
-  color: #00BCD4;
+footer h3 {
+  color: #00bcd4;
 }
 
-footer div.direcoes .footer-info h2{
+footer div.direcoes .footer-info h2 {
   text-align: left;
 }
-footer div.direcoes .footer-info h3{
-  margin: 8px 0px 8px 0px;
+footer div.direcoes .footer-info h3 {
+  margin: 8px 0px;
 }
 
-footer div.direcoes{
+footer div.direcoes {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  clear: right;
   border-bottom: 2px solid #646464;
 }
 
-h3{ /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
+h3 {
+  /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
   text-align: left;
 }
 footer div.direcoes div:first-child {
   width: 20%;
 }
- span{
-  color:#00BCD4;
+span {
+  color: #00bcd4;
 }
 
-footer div.direcoes div:first-child p{
+footer div.direcoes div:first-child p {
   text-align: left;
 }
 
-footer div.link ul{
+footer div.link ul {
   text-align: left;
 }
-footer div.link ul li{
+footer div.link ul li {
   margin-top: 5px;
   list-style: none;
 }
 footer div.link li::before {
-    content: "›";
-    color: #00BCD4;
-    margin-right: 8px;
+  content: "›";
+  color: #00bcd4;
+  margin-right: 8px;
 }
 
-footer div.link ul li a{
+footer div.link ul li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 70%;
 }
 
-footer div.copyright{
+footer div.copyright {
   clear: left;
   width: 100%;
   margin: 10px auto;
   padding-top: 10px;
 }
-
