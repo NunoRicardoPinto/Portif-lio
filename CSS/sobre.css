@@ -1,92 +1,81 @@
-/* =========================================================
-   CONFIGURAÇÕES GERAIS
-   ========================================================= */
+/* ====== CONFIGURAÇÕES GERAIS ============== */
 
 /* Remove as margens e espaçamentos padrão do navegador
    e faz o tamanho dos elementos incluir padding e border. */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* Define a fonte principal utilizada em toda a página. */
 body {
-    font-family: 'Times New Roman', Times, serif;
-
-    /* Define uma cor de fundo clara para a página. */
-     background-color: rgb(75, 72, 72);
-
-    /* Define a cor padrão dos textos. */
-    color: aliceblue;
-
-    /* Define a altura mínima da página. */
-    min-height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(75, 72, 72);
+  color: aliceblue;
+  /* Define a altura mínima da página. */
+  min-height: 100vh;
 }
-
 
 /* =========================================================
    CABEÇALHO
    ========================================================= */
 
-/* Estiliza a área superior da página. */
-.cabecalho {
-    background-color: #222;
-
-    /* Espaçamento interno do cabeçalho. */
-    padding: 20px 8%;
-
-    /* Coloca o nome e o menu na mesma linha. */
-    display: flex;
-
-    /* Coloca o nome de um lado e o menu do outro. */
-    justify-content: space-between;
-
-    /* Alinha os elementos verticalmente. */
-    align-items: center;
-}
-
-
-/* Estiliza o nome apresentado no cabeçalho. */
-.cabecalho h1 {
-    color: white;
-
-    /* Tamanho do nome. */
-    font-size: 28px;
-}
-
-
-/* =========================================================
-   MENU DE NAVEGAÇÃO
-   ========================================================= */
+/* ================== MENU DE NAVEGAÇÃO ================= */
 
 /* Organiza os links do menu horizontalmente. */
-nav {
-    display: flex;
+header.barra-nav {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
 
-    /* Espaçamento entre os links. */
-    gap: 25px;
+  left: 0;
+  z-index: 1000;
+  background-color: rgb(30, 30, 30, 0.95);
 }
 
-
-/* Estiliza os links do menu. */
-nav a {
-    color: white;
-
-    /* Remove o sublinhado padrão dos links. */
-    text-decoration: none;
-
-    /* Define o tamanho do texto. */
-    font-size: 17px;
+div.painel {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+div.painel h1 {
+  font-size: 28px;
+}
+div.painel h1 a {
+  text-decoration: none;
+  color: ghostwhite;
+}
+header .painel h1 a:hover {
+  color: rgb(0, 188, 212);
+}
+/* ==========  MENU  ======= */
 
-/* Altera a aparência do link quando o rato passa por cima. */
-nav a:hover {
-    color: #00bcd4;
+nav.nav-bar {
+  width: 40%;
 }
 
+nav.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav.nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+nav.nav-bar ul li a:hover {
+  color: #00bcd4;
+  transition: 0.3s;
+}
 
 /* =========================================================
    CONTEÚDO PRINCIPAL
@@ -94,23 +83,19 @@ nav a:hover {
 
 /* Define o espaço principal da página. */
 main {
-    width: 90%;
-
-    /* Impede que o conteúdo fique demasiado largo. */
-    max-width: 1100px;
-
-    /* Centraliza o conteúdo horizontalmente. */
-    margin: 50px auto;
+  width: 90%;
+  /* Impede que o conteúdo fique demasiado largo. */
+  max-width: 1100px;
+  /* Centraliza o conteúdo horizontalmente. */
+  margin: 120px auto;
 }
-
 
 /* Título "Sobre o Nuno Pinto". */
 .sobre > h2 {
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 32px;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 32px;
 }
-
 
 /* ============ ÁREA DO PERFIL =============== */
 
@@ -118,103 +103,72 @@ main {
    Em vez de float, usamos Flexbox para organizar
    imagem e texto lado a lado. */
 div.perfil {
-    display: flex;
+  display: flex;
 
-    /* Mantém a imagem e o texto lado a lado. */
-    flex-direction: row;
-    /* Espaçamento entre as duas áreas. */
-    gap: 40px;
-    /* Fundo cinza para destacar o conteúdo. */
+  /* Mantém a imagem e o texto lado a lado. */
+  flex-direction: row;
+  /* Espaçamento entre as duas áreas. */
+  gap: 40px;
+  /* Fundo cinza para destacar o conteúdo. */
   background-color: rgb(45, 43, 43);
-    /* Espaçamento interno. Deixa o texto e a imagem mais centralizados*/
-    padding: 40px;
-    /* Arredonda ligeiramente os cantos. */
-    border-radius: 10px;
+  /* Espaçamento interno. Deixa o texto e a imagem mais centralizados*/
+  padding: 40px;
+  /* Arredonda ligeiramente os cantos. */
+  border-radius: 10px;
 
-    /* Cria uma sombra discreta. */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* Cria uma sombra discreta. */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 /* ================ ÁREA DA IMAGEM ================== */
 
 /* Define o espaço ocupado pela imagem. */
 section.imagem {
-    width: 70%;
+  width: 70%;
 
-    /* Centraliza a imagem dentro da seção. */
-    display: flex;
+  /* Centraliza a imagem dentro da seção. */
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    align-items: center;
+  align-items: center;
 }
-
 
 /* Define o tamanho e aparência da fotografia. */
 section.imagem img {
-    width: 80%;
-    height: 70vh;
+  width: 80%;
+  height: 70vh;
 
-    /* Faz a imagem ocupar o espaço sem ficar deformada. */
-    object-fit: cover;
+  /* Faz a imagem ocupar o espaço sem ficar deformada. */
+  object-fit: cover;
 
-    /* O " % " Transforma a imagem em aproximadamente circular. */
-    border-radius: 3%;
+  /* O " % " Transforma a imagem em aproximadamente circular. */
+  border-radius: 3%;
 
-    /* Pequena borda ao redor da fotografia. */
-    border: 5px solid #222;
+  /* Pequena borda ao redor da fotografia. */
+  border: 5px solid #222;
 }
-
 
 /* ========== ÁREA DO TEXTO ========= */
 
 /* Define o espaço ocupado pelo texto. */
 section.texto {
-    width: 60%;
+  width: 60%;
 }
-
 
 /* Título "Quem sou eu?". */
 section.texto h3 {
-    font-size: 26px;
-
-    margin-bottom: 20px;
+  font-size: 26px;
+  margin-bottom: 20px;
 }
-
 
 /* Estiliza os parágrafos da apresentação. */
 section.texto p {
-    font-size: 18px;
-
-    /* Espaçamento entre linhas para facilitar a leitura. */
-    line-height: 1.7;
-
-    /* Espaçamento entre os parágrafos. */
-    margin-bottom: 15px;
+  font-size: 18px;
+  /* Espaçamento entre linhas para facilitar a leitura. */
+  line-height: 1.7;
+  margin-bottom: 15px;
 }
-
-
-/* =========================================================
-   RODAPÉ
-   ========================================================= */
-
-/* Estiliza o rodapé da página. */
-.rodape {
-    background-color: #222;
-
-    color: white;
-
-    /* Espaçamento interno do rodapé. */
-    padding: 20px;
-
-    /* Centraliza o texto. */
-    text-align: center;
-
-    /* Espaço acima do rodapé. */
-    margin-top: 50px;
-}
-
 
 /* =========================================================
    RESPONSIVIDADE
@@ -224,129 +178,120 @@ section.texto p {
    largura igual ou inferior a 768px, como em tablets
    e alguns telemóveis. */
 @media (max-width: 768px) {
+  /* Coloca o nome e o menu um abaixo do outro. */
+  .cabecalho {
+    flex-direction: column;
 
-    /* Coloca o nome e o menu um abaixo do outro. */
-    .cabecalho {
-        flex-direction: column;
+    gap: 20px;
+  }
 
-        gap: 20px;
-    }
-
-
-    /* Permite que os links ocupem várias linhas
+  /* Permite que os links ocupem várias linhas
        quando não houver espaço suficiente. */
-    nav {
-        flex-wrap: wrap;
+  nav {
+    flex-wrap: wrap;
 
-        justify-content: center;
-    }
+    justify-content: center;
+  }
 
+  /* Coloca a imagem acima do texto em ecrãs pequenos. */
+  div.perfil {
+    flex-direction: column;
 
-    /* Coloca a imagem acima do texto em ecrãs pequenos. */
-    div.perfil {
-        flex-direction: column;
+    align-items: center;
 
-        align-items: center;
+    padding: 25px;
+  }
 
-        padding: 25px;
-    }
+  /* Faz imagem e texto ocuparem toda a largura disponível. */
+  section.imagem,
+  section.texto {
+    width: 100%;
+  }
 
+  /* Reduz o tamanho da fotografia em dispositivos pequenos. */
+  section.imagem img {
+    width: 220px;
 
-    /* Faz imagem e texto ocuparem toda a largura disponível. */
-    section.imagem,
-    section.texto {
-        width: 100%;
-    }
+    height: 220px;
+  }
 
-
-    /* Reduz o tamanho da fotografia em dispositivos pequenos. */
-    section.imagem img {
-        width: 220px;
-
-        height: 220px;
-    }
-
-
-    /* Reduz o tamanho do título principal. */
-    .sobre > h2 {
-        font-size: 27px;
-    }
-
+  /* Reduz o tamanho do título principal. */
+  .sobre > h2 {
+    font-size: 27px;
+  }
 }
 
 /* ============ FOOTER ============ */
 
-footer{
-  background: #1E1E1E;
+footer.rodape {
+  background: #1e1e1e;
   flex-direction: column;
-
+  min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/
+  color: white;
+  /* ========== Essas propriedades centralizam qualquer box que seja filha ======== */
+  display: flex; /*Ajuda a centralizar o filho*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-footer div.direcoes{
+footer div.direcoes {
   height: 25vh;
-}
-footer h3{
-  color: #00BCD4;
-}
-
-footer div.direcoes .footer-info h2{
-  text-align: left;
-}
-footer div.direcoes .footer-info h3{
-  margin: 8px 0px 8px 0px;
-}
-
-footer div.direcoes{
   display: flex;
   justify-content: space-between;
   width: 90%;
-  clear: right;
   border-bottom: 2px solid #646464;
 }
+footer h3 {
+  color: #00bcd4;
+}
 
-h3{ /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
+footer div.direcoes .footer-info h2 {
+  text-align: left;
+}
+footer div.direcoes .footer-info h3 {
+  margin: 8px 0px 8px 0px;
+}
+
+h3 {
+  /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
   text-align: left;
 }
 footer div.direcoes div:first-child {
   width: 20%;
 }
- span{
-  color:#00BCD4;
+span {
+  color: #00bcd4;
 }
 
-footer div.direcoes div:first-child p{
+footer div.direcoes div:first-child p {
   text-align: left;
 }
 
-footer div.link ul{
+footer div.link ul {
   text-align: left;
 }
-footer div.link ul li{
+footer div.link ul li {
   margin-top: 5px;
   list-style: none;
 }
 footer div.link li::before {
-    content: "›";
-    color: #00BCD4;
-    margin-right: 8px;
+  content: "›";
+  color: #00bcd4;
+  margin-right: 8px;
 }
 
-footer div.link ul li a{
+footer div.link ul li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 70%;
 }
 
-footer div.copyright{
+footer div.copyright {
   clear: left;
   width: 100%;
   margin: 10px auto;
   padding-top: 10px;
 }
-
-
-
-
-
 
 /* *{
 margin: 0;
