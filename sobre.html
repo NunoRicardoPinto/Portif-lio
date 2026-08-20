@@ -2,64 +2,50 @@
 <html lang="pt">
 
 <head>
-    <!-- Define a codificação dos caracteres da página -->
     <meta charset="UTF-8">
-
-    <!-- Faz a página adaptar-se a diferentes tamanhos de ecrã -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Liga o ficheiro HTML ao ficheiro CSS -->
     <link rel="stylesheet" href="CSS/sobre.css">
-
-    <!-- Título apresentado na aba do navegador -->
     <title>Sobre Nuno Pinto</title>
 </head>
 
 <body>
-
     <!-- Cabeçalho principal da página -->
-    <header class="cabecalho">
-
-        <!-- Nome ou identificação do proprietário do portfólio -->
-        <h1>Nuno Pinto</h1>
-
-        <!-- Menu de navegação do portfólio -->
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="index.html#projeto">Projetos</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-
+   <header class="barra-nav">
+        <div class="painel">
+            <h1>
+                <a href="index.html">Nuno Pinto</a>
+            </h1>
+            <!-- Menu principal de navegação -->
+            <nav class="nav-bar"  >
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- Fim do cabeçalho principal -->
 
     <!-- Conteúdo principal da página -->
     <main>
-
-        <!-- Seção que apresenta as informações pessoais -->
         <section class="sobre">
-
-            <!-- Título principal da seção -->
             <h2>Sobre o Nuno Pinto</h2>
-            <!-- Área que contém a imagem e o texto -->
+            <!-- Área da imagem e o texto -->
             <div class="perfil">
-
-                <!-- Área destinada à fotografia de perfil -->
+                <!-- Fotografia de perfil -->
                 <section class="imagem">
                     <img src="IMG/perfil.jpg" alt="Fotografia de perfil de Nuno Pinto">
                 </section>
 
 
-                <!-- Área destinada às informações sobre o estudante -->
+                <!-- Informações sobre o mim -->
                 <section class="texto">
-
-                    <!-- Subtítulo da apresentação -->
                     <h3>Quem sou eu?</h3>
-
-                    <!-- apresentação pessoal -->
                     <p>
-                        Olá! Muito prazer, eu sou Nuno Pinto, estudante de Engenharia
+                        Olá! Muito prazer, eu sou Nuno Ricardo Gaspar Pinto, estudante de Engenharia
                         Informática e Comunicações e com vivo interesse em
                         desenvolvimento de software e áreas relacionadas.
                     </p>
@@ -67,10 +53,10 @@
                     <!-- Conhecimentos -->
                     <p>
                         Atualmente estou a desenvolver os meus conhecimentos
-                        em programação, HTML, CSS, JavaScript e outras
+                        em programação web com HTML 5, CSS 3, JavaScript e outras
                         tecnologias relacionadas com o desenvolvimento web.
-                        Fortaleço sempre as minhas bases de lógica de programação porque acredito 
-                        que estando na era da IA, ter os fundamentos bem sólidos é base para construir
+                        Fortaleço sempre as minhas bases de lógica de programação, porque acredito 
+                        que estando na era da IA, ter os fundamentos bem sólidos, é base para construir
                         soluções sólidas. 
                     </p>
 
@@ -78,7 +64,7 @@
                     <p>
                         O meu objetivo é continuar a aprender, desenvolver
                         projetos práticos e construir soluções que possam
-                        realmente resolver problemas reais através da tecnologia.
+                        realmente ajudar a resolver problemas reais através da tecnologia.
                     </p>
 
                 </section>
@@ -92,7 +78,6 @@
 
     <!-- Rodapé da página -->
     <footer class="rodape">
-        <footer>
             <div class="direcoes">
                 <!-- Identidade -->
                 <div class="footer-info">
@@ -139,8 +124,6 @@
             <div class="copyright">
                 <p>&copy; 2026 Nuno <span>Pinto</span>. Todos os direitos reservados.</p>
             </div>
-        </footer>
-
     </footer>
 
 </body>
