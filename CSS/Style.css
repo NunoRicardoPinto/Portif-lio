@@ -292,7 +292,6 @@ section.Home {
   /* Imagem + camada escura por cima. */
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/R.png);
-
   /* Faz a imagem preencher a área. */
   background-size: cover;
 
@@ -455,31 +454,32 @@ section.Princ .item h4 {
 /* Estas regras serão utilizadas em ecrãs menores,
    como tablets e telemóveis. */
 @media (max-width: 768px) {
+
+  section.Home{
+    background-size: cover;
+  }
   /* Permite que o header cresça quando necessário. */
   header.barra-nav {
     height: auto;
-
     padding: 15px 0;
   }
 
   /* Coloca nome e menu verticalmente. */
   header .painel {
     flex-direction: column;
-
     gap: 15px;
   }
 
   /* O menu passa a ocupar toda a largura disponível. */
   header .nav-bar {
     width: 100%;
+    /* margin: 0px auto; */
   }
 
   /* Centraliza os links. */
   header .nav-bar ul {
     justify-content: center;
-
     gap: 20px;
-
     flex-wrap: wrap;
   }
 
@@ -511,6 +511,13 @@ section.Princ .item h4 {
   /* Reduz o tamanho do título da secção. */
   section.Princ > h2 {
     font-size: 35px;
+  }
+  footer{
+    height: 100%;
+  }
+  footer div.direcoes{
+    flex-direction: column;
+    height: 2000px;
   }
 }
 
@@ -545,6 +552,7 @@ footer div.direcoes {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  min-height:80%;
   border-bottom: 2px solid #646464;
 }
 
