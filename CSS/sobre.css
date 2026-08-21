@@ -170,9 +170,8 @@ section.texto p {
   margin-bottom: 15px;
 }
 
-/* =========================================================
-   RESPONSIVIDADE
-   ========================================================= */
+/* ===RESPONSIVIDADE
+   ========== */
 
 /* Estas regras são aplicadas quando o ecrã possui
    largura igual ou inferior a 768px, como em tablets
@@ -181,7 +180,6 @@ section.texto p {
   /* Coloca o nome e o menu um abaixo do outro. */
   .cabecalho {
     flex-direction: column;
-
     gap: 20px;
   }
 
@@ -189,16 +187,13 @@ section.texto p {
        quando não houver espaço suficiente. */
   nav {
     flex-wrap: wrap;
-
     justify-content: center;
   }
 
   /* Coloca a imagem acima do texto em ecrãs pequenos. */
   div.perfil {
     flex-direction: column;
-
     align-items: center;
-
     padding: 25px;
   }
 

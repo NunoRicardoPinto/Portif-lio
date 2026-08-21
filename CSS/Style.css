@@ -517,7 +517,6 @@ section.Princ .item h4 {
   }
   footer div.direcoes{
     flex-direction: column;
-    height: 2000px;
   }
 }
 
