@@ -219,6 +219,7 @@ section.texto p {
 /* ============ FOOTER ============ */
 
 footer.rodape {
+  width: 100%;
   background: #1e1e1e;
   flex-direction: column;
   min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/
@@ -231,9 +232,10 @@ footer.rodape {
 }
 footer div.direcoes {
   height: 25vh;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  align-items: top;
   border-bottom: 2px solid #646464;
 }
 footer h3 {
@@ -244,15 +246,16 @@ footer div.direcoes .footer-info h2 {
   text-align: left;
 }
 footer div.direcoes .footer-info h3 {
-  margin: 8px 0px 8px 0px;
+  margin: 8px 0px;
 }
 
 h3 {
   /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
   text-align: left;
 }
-footer div.direcoes div:first-child {
+footer div.direcoes div {
   width: 20%;
+  padding: 10px;
 }
 span {
   color: #00bcd4;
