@@ -516,25 +516,32 @@ section.Princ .item h4 {
     height: 100%;
   }
   footer div.direcoes{
-    flex-direction: column;
+    display: -webkit-flex;
   }
+
+ footer div.direcoes div{
+  margin: 5px;
+  padding:10px;
+ }
+
+
+
 }
 
-/* ======== FOOTER ======== */
+/* ================================= 
+                        FOOTER 
+==================================== */
 
 footer {
+  width: 100%;
   background: #1e1e1e;
   flex-direction: column;
-  min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/
-  color: white;
+  min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/ 
   /* Centraliza o conteúdo. */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-footer div.direcoes {
-  height: 25vh;
 }
 footer h3 {
   color: #00bcd4;
@@ -549,19 +556,29 @@ footer div.direcoes .footer-info h3 {
 
 footer div.direcoes {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
-  min-height:80%;
+  height:25vh;
+  align-items: top;
   border-bottom: 2px solid #646464;
 }
+footer div.direcoes .item{
+  border: solid red;
+  flex-grow: 1; /*Alinha a distância entre os itens*/
+  flex-basis: 200;
+}
+
+footer div.direcoes div{
+   padding: 10px;
+   width: 20%;
+  }
 
 h3 {
   /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
   text-align: left;
 }
-footer div.direcoes div:first-child {
-  width: 20%;
-}
+
 span {
   color: #00bcd4;
 }

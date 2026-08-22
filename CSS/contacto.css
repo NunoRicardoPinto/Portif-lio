@@ -385,19 +385,20 @@ footer div.direcoes .footer-info h3 {
 }
 
 footer div.direcoes {
+  width: 90%;
   height: 25vh;
   display: flex;
+  text-align: top;
   justify-content: space-between;
-  width: 90%;
-  clear: right;
   border-bottom: 2px solid #646464;
 }
 
 h3 {
   text-align: left;
 }
-footer div.direcoes div:first-child {
+footer div.direcoes div {
   width: 20%;
+  padding: 10px;
 }
 span {
   color: #00bcd4;
