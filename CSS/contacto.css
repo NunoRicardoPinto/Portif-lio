@@ -364,67 +364,73 @@ footer {
 
 /* ============= FOOTER ================ */
 
+
 footer {
   width: 100%;
-  margin-top: 50px;
-  background: #1e1e1e;
+  background: black;
+  min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/
   flex-direction: column;
-  min-height: 40vh;
+  /* Centraliza o conteúdo. */
+  display: flex;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
-
 footer h3 {
   color: #00bcd4;
 }
 
-footer div.direcoes .footer-info h2 {
+footer .footer-content .footer-info h2 {
   text-align: left;
 }
 footer div.direcoes .footer-info h3 {
-  margin: 8px 0px 8px 0px;
+  margin: 8px 0px;
 }
 
-footer div.direcoes {
-  width: 90%;
-  height: 25vh;
-  display: flex;
-  text-align: top;
-  justify-content: space-between;
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
   border-bottom: 2px solid #646464;
+  width: 90%;
+  padding: 10px 0px;
+}
+.item,
+footer .footer-content .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 h3 {
+  /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
   text-align: left;
 }
-footer div.direcoes div {
-  width: 20%;
-  padding: 10px;
-}
+
 span {
   color: #00bcd4;
 }
 
-footer div.direcoes div:first-child p {
+footer .footer-content div:first-child p{
   text-align: left;
+  opacity: 70%;
 }
 
-footer div.link ul {
-  text-align: left;
-}
-footer div.link ul li {
-  margin-top: 5px;
-  list-style: none;
-}
-footer div.link li::before {
+footer .footer-content li::before {
   content: "›";
   color: #00bcd4;
   margin-right: 8px;
 }
 
-footer div.link ul li a {
+footer .footer-content ul li a {
   text-decoration: none;
   color: #ffffff;
   opacity: 70%;
+}
+
+footer .footer-content ul {
+  list-style: none;
+  text-align: left;
 }
 
 footer div.copyright {
@@ -432,4 +438,23 @@ footer div.copyright {
   width: 100%;
   margin: 10px auto;
   padding-top: 10px;
+}
+
+/* 
+============
+RESPONSIVIDADE DO FOOTER
+============ */
+
+@media screen and (max-width:768px) {
+        footer .footer-content{
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3rem 2rem;
+        }
+}
+
+@media screen and (max-width:426px) {
+        footer .footer-content{
+          grid-template-columns: repeat(1, 1fr);
+          padding: 3rem 2rem;
+        }
 }
