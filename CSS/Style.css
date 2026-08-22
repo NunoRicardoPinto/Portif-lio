@@ -454,8 +454,7 @@ section.Princ .item h4 {
 /* Estas regras serão utilizadas em ecrãs menores,
    como tablets e telemóveis. */
 @media (max-width: 768px) {
-
-  section.Home{
+  section.Home {
     background-size: cover;
   }
   /* Permite que o header cresça quando necessário. */
@@ -512,20 +511,17 @@ section.Princ .item h4 {
   section.Princ > h2 {
     font-size: 35px;
   }
-  footer{
+  footer {
     height: 100%;
   }
-  footer div.direcoes{
+  footer div.direcoes {
     display: -webkit-flex;
   }
 
- footer div.direcoes div{
-  margin: 5px;
-  padding:10px;
- }
-
-
-
+  footer div.direcoes div {
+    margin: 5px;
+    padding: 10px;
+  }
 }
 
 /* ================================= 
@@ -534,9 +530,9 @@ section.Princ .item h4 {
 
 footer {
   width: 100%;
-  background: #1e1e1e;
+  background: black;
+  min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/
   flex-direction: column;
-  min-height: 40vh; /*A altura fica flexível e adapta-se ao conteúdo*/ 
   /* Centraliza o conteúdo. */
   display: flex;
   justify-content: center;
@@ -547,32 +543,24 @@ footer h3 {
   color: #00bcd4;
 }
 
-footer div.direcoes .footer-info h2 {
+footer .footer-content .footer-info h2 {
   text-align: left;
 }
 footer div.direcoes .footer-info h3 {
   margin: 8px 0px;
 }
 
-footer div.direcoes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
-  height:25vh;
-  align-items: top;
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
   border-bottom: 2px solid #646464;
 }
-footer div.direcoes .item{
-  border: solid red;
-  flex-grow: 1; /*Alinha a distância entre os itens*/
-  flex-basis: 200;
+footer .footer-content .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
-
-footer div.direcoes div{
-   padding: 10px;
-   width: 20%;
-  }
 
 h3 {
   /*seleciona a última div dentro da div com a classe direcoes e seleciona o h3 dela */
@@ -583,27 +571,26 @@ span {
   color: #00bcd4;
 }
 
-footer div.direcoes div:first-child p {
+footer .footer-content div:first-child p{
   text-align: left;
+  opacity: 70%;
 }
 
-footer div.link ul {
-  text-align: left;
-}
-footer div.link ul li {
-  margin-top: 5px;
-  list-style: none;
-}
-footer div.link li::before {
+footer .footer-content li::before {
   content: "›";
   color: #00bcd4;
   margin-right: 8px;
 }
 
-footer div.link ul li a {
+footer .footer-content ul li a {
   text-decoration: none;
   color: #ffffff;
   opacity: 70%;
+}
+
+footer .footer-content ul {
+  list-style: none;
+  text-align: left;
 }
 
 footer div.copyright {
@@ -611,4 +598,23 @@ footer div.copyright {
   width: 100%;
   margin: 10px auto;
   padding-top: 10px;
+}
+
+/* 
+============
+RESPONSIVIDADE DO FOOTER
+============ */
+
+@media screen and (max-width:768px) {
+        footer .footer-content{
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3rem 2rem;
+        }
+}
+
+@media screen and (max-width:426px) {
+        footer .footer-content{
+          grid-template-columns: repeat(1, 1fr);
+          padding: 3rem 2rem;
+        }
 }
