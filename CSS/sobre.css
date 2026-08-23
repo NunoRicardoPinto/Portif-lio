@@ -61,9 +61,9 @@ nav.nav-bar {
 }
 
 nav.nav-bar ul {
-  display: flex;
-  justify-content: center; /*FFaz com que todos os links se alinhei para o centro, deixando um espaçamento nas extremidades.*/
   list-style: none;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -184,26 +184,20 @@ section.texto p {
     padding: 15px 0;
   }
   /* Coloca o nome e o menu um abaixo do outro. */
-  div.painel {
+  .painel {
     flex-direction: column;
     gap: 15px;
   }
-  div.painel .nav-bar {
+ header .painel .nav-bar {
     width: 100%;
   }
-  .nav-bar ul{
-    justify-content: center;
-    flex-wrap: wrap;
+
+header .painel .nav-bar ul{
+    justify-content: center; /*Faz com que todos os links se alinhei para o centro, 
+    deixando um espaçamento nas extremidades.*/
     gap: 20px;
-   
-  }
-
-
-  /* Permite que os links ocupem várias linhas
-       quando não houver espaço suficiente. */
-  nav {
     flex-wrap: wrap;
-    justify-content: center;
+   
   }
 
   /* Coloca a imagem acima do texto em ecrãs pequenos. */

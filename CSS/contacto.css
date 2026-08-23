@@ -318,14 +318,12 @@ footer {
   /* Header passa a ocupar o espaço necessário. */
   .barra-nav {
     height: auto;
-
     padding: 15px 0;
   }
 
   /* Nome e menu ficam um abaixo do outro. */
   .painel {
     flex-direction: column;
-
     gap: 15px;
   }
 
