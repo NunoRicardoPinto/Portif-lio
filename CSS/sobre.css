@@ -29,7 +29,6 @@ header.barra-nav {
   height: 70px;
   position: fixed;
   top: 0;
-
   left: 0;
   z-index: 1000;
   background-color: rgb(30, 30, 30, 0.95);
@@ -53,6 +52,7 @@ div.painel h1 a {
 }
 header .painel h1 a:hover {
   color: rgb(0, 188, 212);
+  transition: all 0.4s;
 }
 /* ==========  MENU  ======= */
 
@@ -62,19 +62,21 @@ nav.nav-bar {
 
 nav.nav-bar ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /*FFaz com que todos os links se alinhei para o centro, deixando um espaçamento nas extremidades.*/
   list-style: none;
+  align-items: center;
 }
 
 nav.nav-bar ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
+  transition: 0.3s;
 }
 
 nav.nav-bar ul li a:hover {
   color: #00bcd4;
-  transition: 0.3s;
+  transition: all 0.4s;
 }
 
 /* =========================================================
@@ -113,7 +115,6 @@ div.perfil {
   background-color: rgb(45, 43, 43);
   /* Espaçamento interno. Deixa o texto e a imagem mais centralizados*/
   padding: 40px;
-  /* Arredonda ligeiramente os cantos. */
   border-radius: 10px;
 
   /* Cria uma sombra discreta. */
@@ -138,7 +139,6 @@ section.imagem {
 section.imagem img {
   width: 80%;
   height: 70vh;
-
   /* Faz a imagem ocupar o espaço sem ficar deformada. */
   object-fit: cover;
 
@@ -177,11 +177,27 @@ section.texto p {
    largura igual ou inferior a 768px, como em tablets
    e alguns telemóveis. */
 @media (max-width: 768px) {
-  /* Coloca o nome e o menu um abaixo do outro. */
-  .cabecalho {
-    flex-direction: column;
-    gap: 20px;
+
+  header.barra-nav {
+    /* Faz a altura ajustar-se ao espaço. E deixa os conteúdos mais separados */
+    height: auto;
+    padding: 15px 0;
   }
+  /* Coloca o nome e o menu um abaixo do outro. */
+  div.painel {
+    flex-direction: column;
+    gap: 15px;
+  }
+  div.painel .nav-bar {
+    width: 100%;
+  }
+  .nav-bar ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+  }
+
 
   /* Permite que os links ocupem várias linhas
        quando não houver espaço suficiente. */
@@ -264,7 +280,7 @@ span {
   color: #00bcd4;
 }
 
-footer .footer-content div:first-child p{
+footer .footer-content div:first-child p {
   text-align: left;
   opacity: 70%;
 }
@@ -298,18 +314,18 @@ footer div.copyright {
 RESPONSIVIDADE DO FOOTER
 ============ */
 
-@media screen and (max-width:768px) {
-        footer .footer-content{
-          grid-template-columns: repeat(2, 1fr);
-          gap: 3rem 2rem;
-        }
+@media screen and (max-width: 768px) {
+  footer .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 2rem;
+  }
 }
 
-@media screen and (max-width:426px) {
-        footer .footer-content{
-          grid-template-columns: repeat(1, 1fr);
-          padding: 3rem 2rem;
-        }
+@media screen and (max-width: 426px) {
+  footer .footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
 }
 
 /* *{

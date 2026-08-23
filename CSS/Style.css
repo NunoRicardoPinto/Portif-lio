@@ -243,6 +243,7 @@ header .painel h1 a {
 
 header .painel h1 a:hover {
   color: rgb(0, 188, 212);
+  transition: all 0.4s;
 }
 
 /* =========================================================
@@ -256,13 +257,10 @@ header .nav-bar {
 
 /* Organiza os elementos da lista horizontalmente. */
 header .nav-bar ul {
-  width: 100%;
   display: flex;
   /* Distribui os links pelo espaço disponível. */
   justify-content: space-between;
   align-items: center;
-
-  /* Remove os marcadores da lista. */
   list-style: none;
 }
 
@@ -276,6 +274,7 @@ header .nav-bar ul li a {
 
 header .nav-bar ul li a:hover {
   color: rgb(0, 188, 212);
+  transition: all 0.4s;
 }
 
 /* =========================================================
@@ -513,14 +512,6 @@ section.Princ .item h4 {
   }
   footer {
     height: 100%;
-  }
-  footer div.direcoes {
-    display: -webkit-flex;
-  }
-
-  footer div.direcoes div {
-    margin: 5px;
-    padding: 10px;
   }
 }
 
