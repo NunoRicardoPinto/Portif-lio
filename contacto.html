@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://kit.fontawesome.com/60e9462d93.js" crossorigin="anonymous"></script>
     <title>Contacto | Nuno Pinto</title>
     <link rel="stylesheet" href="CSS/contacto.css">
 </head>
@@ -33,37 +35,40 @@
     </header>
 
     <!-- ======== CONTEÚDO PRINCIPAL ========== -->
-    <main style=" border: 2px solid red;">
+    <main>
         <h2>Entre em contacto</h2>
 
         <!-- ======= ÁREA DE CONTACTO e redes sociais. ======== -->
-        <section class="contacto-container" style=" border: 2px solid yellow;">
+        <section class="contacto-container">
             <!-- ========= FORMULÁRIO ============ -->
-            <section class="formulario" style=" border: 2px solid blue;">
-                <!-- Título -->
+            <section class="formulario">
                 <h3>Envie uma mensagem</h3>
                 <!-- Formulário de contacto -->
-
-                <form style=" border: 2px solid red;">
+                <form method="POST" id="contact-form">
                     <!-- Campo para nome -->
-                    <div class="campo" style=" border: 2px solid green;">
+                    <div class="campo">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
                     </div>
                     <!-- Campo para email -->
                     <div class="campo">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Digite o seu email">
+                        <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                    </div> 
+                    <!-- Compo de assunto -->
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <input type="subject" id="assunto" name="assunto" placeholder="Assunto" required>
                     </div>
                     <!-- Campo para mensagem -->
                     <div class="campo">
                         <label for="mensagem">Mensagem</label>
                         <textarea id="mensagem" name="mensagem" rows="6"
-                            placeholder="Escreva a sua mensagem..."></textarea>
+                            placeholder="Escreva a sua mensagem..." required></textarea>
                     </div>
 
                     <!-- Botão para enviar o formulário -->
-                    <button type="submit">
+                    <button type="submit" id="submit">
                         Enviar mensagem
                     </button>
 
@@ -74,7 +79,6 @@
             <!-- ========= REDES SOCIAIS =========== -->
 
             <section class="redes">
-                <!-- Título da área -->
                 <h3>Minhas redes</h3>
                 <!-- Explicação -->
                 <p>
@@ -83,9 +87,9 @@
                 </p>
                 <ul>
                     <!-- GitHub -->
-                    <li><a href="https://github.com/NunoRicardoPinto">GitHub</a></li>
+                    <li><a href="https://github.com/NunoRicardoPinto"><i class="fa-brands fa-github"></i></a></li>
                     <!-- LinkedIn -->
-                    <li><a href="http://linkedin.com/in/nuno-pinto-9a8467287">LinkedIn</a></li>
+                    <li><a href="http://linkedin.com/in/nuno-pinto-9a8467287"><i class="fa-brands fa-square-linkedin"></i></a></li>
                     <!-- Indisponível -->
                     <!-- <li><a href="#">Instagram</a></li> -->
                 </ul>
@@ -138,7 +142,7 @@
         </div>
     </footer>
 
-
+<script src="JS/script.js"></script>
 </body>
 
 </html>
