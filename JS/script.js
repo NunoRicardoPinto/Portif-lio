@@ -1,5 +1,5 @@
 // Para inicializar a função com a minha public Key
-emailjs.init("MmSSE6-kzT_N7zuIK");
+emailjs.init("MmSSE6-kzT_N7zuIK"); //No caso de u cliente devo pegar o "private Key".
 
 document
   .getElementById("contact-form")
@@ -15,7 +15,7 @@ document
       mensagem: document.getElementById("mensagem").value,
     };
 
-    console.table(formData);
+    // console.table(formData); Verifica se as informaões dos campos estão a ser recebidas pelo JS
 
     const serveceID = "service_imf1zbo";
     const templeteID = "template_qxmcpgw";
