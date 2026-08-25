@@ -102,8 +102,8 @@ main {
 /* Título principal. */
 main > h2 {
   text-align: center;
-  font-size: 45px;
-  margin-bottom: 50px
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
 /* =========================================================
@@ -227,27 +227,21 @@ main > h2 {
 /* Remove os marcadores da lista. */
 .redes ul {
   list-style: none;
-  display: flex;
-  border: solid red;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
+  text-align: left;
 }
 
 /* Espaçamento entre as redes. */
 .redes li {
   margin-bottom: 15px;
-   border: solid red;
-   
-  }
-  
-  /* Links das redes sociais. */
-  .redes a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-  }
+}
+
+/* Links das redes sociais. */
+.redes a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
 /* Efeito ao passar o rato. */
 .redes a:hover {
   color: rgb(0, 188, 212);
@@ -260,14 +254,6 @@ main > h2 {
 /* Rodapé da página. */
 footer {
   min-height: 25vh;
-  background-image:
-  linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../IMG/R.png);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 /* =========== RESPONSIVIDADE ============== */
