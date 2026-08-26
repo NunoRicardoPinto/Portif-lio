@@ -179,14 +179,14 @@ section.Princ > h2 {
   text-align: center;
   font-size: 45px;
   margin-bottom: 20px;
-}  
-section.Princ > p{
-   padding-bottom: 40px;
-   text-align: center;
-   width: 100%;
-    margin: 0 auto;
-    font-size: 18px;
-    opacity: 0.8;
+}
+section.Princ > p {
+  padding-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  opacity: 0.8;
 }
 
 /* =========================================================
@@ -218,7 +218,11 @@ section.Princ .grid-container article.item {
   text-align: center;
   padding-bottom: 25px;
   transition: all 0.3s;
-
+                  img{
+                    width: 100%;
+                    /* A propriedade abaixo faz com que a imagem tenha porpoção retanguar. */
+                    aspect-ratio: 3/2;
+                  } 
 }
 section.Princ .grid-container .item div:first-child {
   width: 100%;
@@ -228,8 +232,9 @@ section.Princ .grid-container .item div:first-child {
   display: flex;
   justify-content: center;
   background-image:
-  linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../IMG/R.png);
+    linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../IMG/R.png);
   background-position: center;
+  background-size: cover;
 }
 /* =========================================================
    INFORMAÇÕES DO PROJETO

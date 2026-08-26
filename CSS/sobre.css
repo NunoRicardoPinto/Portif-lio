@@ -106,7 +106,6 @@ main {
    imagem e texto lado a lado. */
 div.perfil {
   display: flex;
-
   /* Mantém a imagem e o texto lado a lado. */
   flex-direction: row;
   /* Espaçamento entre as duas áreas. */
@@ -116,7 +115,6 @@ div.perfil {
   /* Espaçamento interno. Deixa o texto e a imagem mais centralizados*/
   padding: 40px;
   border-radius: 10px;
-
   /* Cria uma sombra discreta. */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -129,9 +127,7 @@ section.imagem {
 
   /* Centraliza a imagem dentro da seção. */
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 }
 
