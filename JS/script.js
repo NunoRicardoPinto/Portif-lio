@@ -19,6 +19,20 @@ document
 
     const serveceID = "service_imf1zbo";
     const templeteID = "template_qxmcpgw";
+    const submitButton = getElementById("submit");
+    submitButton.textContent="Enviando..."
+    submitButton.disable = true;
     // Para enviar o emai para mim
-    emailjs.send(serveceID, templeteID, formData);
+    emailjs.send(serveceID, templeteID, formData). 
+    then(()=>{
+      alert ("Tudo certo. Muito Obrigado!");
+    })
+    document.getElementById("contact-form").reset()
+    .catch((error) =>{
+      console.error("Erro no envio", error);
+    })
+    .finally(() =>{
+      submitButton.textContent = "Enviar mensagem."
+      submitButton.disable = false;//Desabilita o botão depois de usado
+    })
   });
