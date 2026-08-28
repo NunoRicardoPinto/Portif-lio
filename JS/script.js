@@ -6,7 +6,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); //Para não recarregar a tela depois de clicar no botão submit.(É um psdrão dele.)
 
-    // Criação de objecto dos dados ao dubmeter eles.
+    // Criação de objecto dos dados ao submeter eles.
     const formData = {
       // O value serve para pegar o valor que está no campo
       nome: document.getElementById("nome").value,
@@ -15,24 +15,30 @@ document
       mensagem: document.getElementById("mensagem").value,
     };
 
-    // console.table(formData); Verifica se as informaões dos campos estão a ser recebidas pelo JS
+    // console.table(formData); //Verifica se as informaões dos campos estão a ser recebidas pelo JS
 
     const serveceID = "service_imf1zbo";
     const templeteID = "template_qxmcpgw";
-    const submitButton = getElementById("submit");
-    submitButton.textContent="Enviando..."
-    submitButton.disable = true;
+    const submitButton = document.getElementById("submit");
+    submitButton.textContent = "Enviando...";
     // Para enviar o emai para mim
-    emailjs.send(serveceID, templeteID, formData). 
-    then(()=>{
-      alert ("Tudo certo. Muito Obrigado!");
-    })
-    document.getElementById("contact-form").reset()
-    .catch((error) =>{
-      console.error("Erro no envio", error);
-    })
-    .finally(() =>{
-      submitButton.textContent = "Enviar mensagem."
-      submitButton.disable = false;//Desabilita o botão depois de usado
-    })
+    emailjs
+      .send(serveceID, templeteID, formData)
+      .then(() => {
+        Toastify({
+          text: "Email enviado!",
+          duration: 3000,
+          style: {
+            background: "#28a745",
+            color: "#f4f4f4",
+          },
+        }).showToast();
+        document.getElementById("contact-form").reset()
+      })
+      .catch((Error) => {
+        console.error("Erro no envio.", Error);
+      })
+      .finally(() => {
+        submitButton.textContent = "Enviar";
+      });
   });
