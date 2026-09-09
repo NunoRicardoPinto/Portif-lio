@@ -41,6 +41,20 @@ header .painel {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  div.menu-bottons {
+    position: absolute;
+    
+    button {
+      border-style: none;
+      background-color: transparent;
+      .icon {
+        width: 100px;
+        height: 40px;
+        color: white;
+      }
+    }
+  }
 }
 
 /* =========================================================
@@ -104,12 +118,11 @@ section.Home {
   min-height: 100vh;
   /* Imagem + camada escura por cima. */
   background-image:
-    linear-gradient(rgba(59, 59, 59, 0.7), rgba(0, 0, 0, 0.8)), url(../IMG/favIcon.png);
+    linear-gradient(rgba(59, 59, 59, 0.7), rgba(0, 0, 0, 0.8)),
+    url(../IMG/favIcon.png);
   /* Faz a imagem preencher a área. */
   background-size: cover;
-  /* Centraliza a imagem. */
   background-position: center;
-  /* Evita que o header cubra o conteúdo. */
   padding-top: 70px;
   /* Permite centralizar a apresentação. */
   display: flex;
@@ -218,11 +231,11 @@ section.Princ .grid-container article.item {
   text-align: center;
   padding-bottom: 25px;
   transition: all 0.3s;
-                  img{
-                    width: 100%;
-                    /* A propriedade abaixo faz com que a imagem tenha porpoção retanguar. */
-                    aspect-ratio: 3/2;
-                  } 
+  img {
+    width: 100%;
+    /* A propriedade abaixo faz com que a imagem tenha porpoção retanguar. */
+    aspect-ratio: 3/2;
+  }
 }
 section.Princ .grid-container .item div:first-child {
   width: 100%;
