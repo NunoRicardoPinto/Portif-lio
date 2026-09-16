@@ -42,31 +42,49 @@ header .painel {
   justify-content: space-between;
   align-items: center;
 
-  div.menu-bottons {
-    position: absolute;
-    
-    button {
+}
+
+div.menu-botton{
+  display: none;
+  button {
       border-style: none;
       background-color: transparent;
       .icon {
-        width: 100px;
+        width: 40px;
         height: 40px;
         color: white;
+        background-color: wheat;
+        border: 2px solid white;
+        color: aliceblue;
+
       }
     }
-  }
 }
+div.menu-mobile{
+    display: none;
+  }
+/* 00000000000000000000000000000  Responsividade do Menu 00000000000000000000000000 */
+  @media screen and (max-width:730px){
 
-/* =========================================================
+    .nav-bar{
+      display: none;
+    }
+
+    div.menu-botton{
+      display: inline;
+    }
+  }
+
+/* 
+  ===
    NOME DO PORTFÓLIO
-   ========================================================= */
+  === 
+   */
 
-/* Estiliza o nome Nuno Pinto. */
 header .painel h1 {
   font-size: 28px;
 }
 
-/* Estiliza o link do nome. */
 header .painel h1 a {
   color: ghostwhite;
   text-decoration: none;
@@ -310,16 +328,13 @@ section.Princ .item h4 {
     padding: 15px 0;
   }
 
-  /* Coloca nome e menu verticalmente. */
   header .painel {
-    flex-direction: column;
     gap: 15px;
   }
 
   /* O menu passa a ocupar toda a largura disponível. */
   header .nav-bar {
     width: 100%;
-    /* margin: 0px auto; */
   }
 
   /* Centraliza os links. */
@@ -329,18 +344,17 @@ section.Princ .item h4 {
     flex-wrap: wrap;
   }
 
-  /* Reduz o tamanho do nome principal. */
   div.Apre1 h1 {
     font-size: 42px;
   }
 
-  /* Reduz o tamanho do título profissional. */
+  /*  Título profissional. */
   h4,
   div.Apre1 h2 {
     font-size: 20px;
   }
 
-  /* Aumenta a largura disponível para o texto. */
+  /* Largura disponível para o texto. */
   div.Apre1 p {
     width: 90%;
   }
@@ -356,13 +370,9 @@ section.Princ .item h4 {
     width: 100%;
   }
 
-  /* Reduz o tamanho do título da secção. */
   section.Princ > h2 {
     font-size: 35px;
     margin-top: 25px;
-  }
-  footer {
-    height: 100%;
   }
 }
 
