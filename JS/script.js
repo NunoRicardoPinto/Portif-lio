@@ -1,9 +1,7 @@
 // Para inicializar a função com a minha public Key
 emailjs.init("MmSSE6-kzT_N7zuIK"); //No caso de u cliente devo pegar o "private Key".
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
+document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault(); //Para não recarregar a tela depois de clicar no botão submit.(É um psdrão dele.)
 
     // Criação de objecto dos dados ao submeter eles.
@@ -42,3 +40,14 @@ document
         submitButton.textContent = "Enviar";
       });
   });
+
+  // CONFIGURAÇÃO DO MENU RESPONSIVO
+
+  function Menu(){
+    let mostrar = document.querySelector(".menu_mobile");
+      if(mostrar.classList.contains("open")){
+        mostrar.classList.remove("open");
+      }else{
+        mostrar.classList.add("open");
+      }
+  }
