@@ -47,7 +47,9 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
     let mostrar = document.querySelector(".menu_mobile");
       if(mostrar.classList.contains("open")){
         mostrar.classList.remove("open");
+        let menu = document.querySelector(".icon").src="./IMG/menu-full.svg";
       }else{
         mostrar.classList.add("open");
+        let menu = document.querySelector(".icon").src="./IMG/x-full.svg";
       }
   }

@@ -63,9 +63,6 @@ div.menu-botton {
     .icon {
       width: 40px;
       height: 40px;
-      color: white;
-      background-color: wheat;
-      border: 2px solid white;
       color: aliceblue;
     }
   }
@@ -345,7 +342,7 @@ section.Princ .item h4 {
     gap: 15px;
   }
 
-  /* O menu passa a ocupar toda a largura disponível. */
+  /* O  passa a ocupar toda a largura disponível. */
   header .nav-bar {
     width: 100%;
   }
