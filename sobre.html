@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/sobre.css">
     <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Style.css">
     <title>Sobre Nuno Pinto</title>
 </head>
 
@@ -16,15 +17,31 @@
             <h1>
                 <a href="index.html">Nuno Pinto</a>
             </h1>
+
             <!-- Menu principal de navegação -->
-            <nav class="nav-bar"  >
-                <ul>
-                    <li><a href="index.html#inicio">Início</a></li>
-                    <li><a href="index.html#projetos">Projetos</a></li>
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li><a href="#Inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                     <li><a href="./sobre.html">Sobre</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+
+            <div class="menu-botton" id="abrirMenu">
+                <button onclick="Menu()">
+                    <!-- <i class="fa-solid fa-bars icon"></i> -->
+                    <img class="icon" src="./IMG/menu-full.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="menu_mobile">
+            <ul>
+                <li><a href="#Inicio">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
         </div>
     </header>
 
@@ -122,7 +139,7 @@
         </div>
     </footer>
 
-
+    <script src="JS/script.js"></script>
 </body>
 
 </html>

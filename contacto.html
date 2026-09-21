@@ -10,30 +10,42 @@
     <link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon">
     <title>Contacto | Nuno Pinto</title>
     <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="stylesheet" href="CSS/Style.css">
 </head>
 
 
 <body>
     <header class="barra-nav">
-        <!-- Painel principal da navegação -->
         <div class="painel">
-            <h1><a href="index.html">Nuno Pinto</a></h1>
+            <h1>
+                <a href="index.html">Nuno Pinto</a>
+            </h1>
 
-            <!-- Menu de navegação -->
+            <!-- Menu principal de navegação -->
             <nav class="nav-bar">
-                <ul>
-                    <!-- Página inicial -->
-                    <li><a href="index.html">Início</a></li>
-                    <!-- Secção de projetos -->
-                    <li><a href="index.html#projetos">Projetos</a></li>
-                    <!-- Página sobre -->
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <!-- Página atual -->
-                    <li><a href="contacto.html">Contacto</a></li>
+                <ul class="nav-links">
+                    <li><a href="#Inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
 
+            <div class="menu-botton" id="abrirMenu">
+                <button onclick="Menu()">
+                    <!-- <i class="fa-solid fa-bars icon"></i> -->
+                    <img class="icon" src="./IMG/menu-full.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="menu_mobile">
+            <ul>
+                <li><a href="#Inicio">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
 
     <!-- ======== CONTEÚDO PRINCIPAL ========== -->

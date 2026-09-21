@@ -181,7 +181,6 @@ section.texto p {
   }
   /* Coloca o nome e o menu um abaixo do outro. */
   .painel {
-    flex-direction: column;
     gap: 15px;
   }
  header .painel .nav-bar {
